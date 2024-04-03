@@ -24,46 +24,61 @@
         <script src="https://kit.fontawesome.com/bcf8f471a4.js" crossorigin="anonymous"></script>
       </head>
     <body>
-
+      <div class="loader">
+      </div>
         
-          <header>
-            <nav class="navbar navbar-expand-lg bg-clear index-nav"> <!--Ask if carouseld is needed-->
-              <div class="nav-child-1 container-fluid">
-                <a class="navbar-brand text-white " href="#">
-                  <img class="navbar-img"src="./images/logo-namasteIndianPalace.png" width="50%">
-                </a> <!--LOGO TO COME HERE-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                  <img src="./images/56763.png">
-                </button>
-                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                  <div class="offcanvas-header">
-                    <button type="button" class="btn-close justify-content-start color-" data-bs-dismiss="offcanvas" aria-label="Close"></button> <!--Style it, add animation-->
-                  </div>
-                  <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe -5">
-                      <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white" href="contact.html">Contact</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white" href="about.html">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white" href="menu.html">Menu</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+         <header>
+        <nav class="navbar navbar-expand-lg bg-clear index-nav"> <!--Ask if carouseld is needed-->
+          <div class="nav-child-1 container-fluid">
+            <a class="navbar-brand text-white " href="#">
+              <img class="navbar-img"src="./images/logo-namasteIndianPalace.png" width="50%">
+            </a> <!--LOGO TO COME HERE-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <img src="./images/56763.png">
+            </button>
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close justify-content-start color-" data-bs-dismiss="offcanvas" aria-label="Close"></button> <!--Style it, add animation-->
               </div>
-
-              <div class="down-arrow">
-                <ion-icon id ="down-arrow-1" name="chevron-down-outline"></ion-icon>
-                <ion-icon id ="down-arrow-2" name="chevron-down-outline"></ion-icon>
-              </div>  
-            </nav>
-          </header>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe -5">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="dropdown">
+                      <button class="btn-secondary">
+                        MENU <i class="fa-solid fa-caret-down"></i>
+                      </button>
+                      <div class="content">
+                        <a href="/menu-items/veg-appz.html">Appetizers (Veg.)</a>
+                        <a href="/menu-items/nonveg-appz.html">Appetizers (Non Veg.)</a>
+                        <a href="">Soups & Salads</a>
+                        <a href="">Tandoor Specialties</a>
+                        <a href="">Veg Specialties</a>
+                        <a href="">Chicken Specialties</a>
+                        <a href="">Lamb & Goat Specialties</a>
+                        <a href="">Seafood Specialties</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+          <div class="down-arrow">
+            <ion-icon id ="down-arrow-1" name="chevron-down-outline"></ion-icon>
+            <ion-icon id ="down-arrow-2" name="chevron-down-outline"></ion-icon>
+          </div>  
+        </nav>
+        </header>
 
           <main>
             <div id="home-main-content" class="d-flex flex-row">

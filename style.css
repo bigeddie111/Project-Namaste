@@ -15,11 +15,51 @@ body{
     box-sizing: border-box;
 }
 
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    z-index: 2;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: solid 15px black;
+    border-top: solid 15px #FFD700;
+    border-radius: 50%;
+    animation: loading 0.75s linear infinite;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotate(0turn);
+    }
+
+    100%{
+        transform: rotate(1turn);
+    }
+}
+
 /* Navigation */
 
 .index-img{
     width: 100%;
 }
+
 
 #offcanvasNavbar ul li{
     font-family: "Poppins";
@@ -29,7 +69,62 @@ body{
     margin-right: 40px;
 }
 
+.dropdown:hover .fa-caret-down {
+    animation: dropdown-arrow .5s ease-out 1 forwards;
+   
+}
 
+@keyframes dropdown-arrow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(180deg);
+    }
+
+}
+
+
+
+.dropdown button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 15px;
+}
+
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+    font-size: 24px;
+    font-weight: 300;
+    z-index: 2;
+}
+
+
+.dropdown:hover button{
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+.dropdown:hover .content{
+    display: block; 
+}
+
+.content a:hover {
+    background-color: rgba(255, 255, 255, 0.719);
+}
 
 header .index-nav{
     background-image: url(./images/l-intro-1645057933.jpg);
@@ -65,9 +160,9 @@ header .about-nav {
 }
 
 header .menu-nav{
-    background-image: url(./images/Chicken_Grilled_Blog_2-ezgif.com-crop.webp);
+    background-image: url(./images/Chicken_Grilled_Blog_2-ezgif.com-crop.jpg);
     background-size: cover;
-    height: 60rem;
+    height: 30rem;
     width: 100%;
     display: flex;
     align-items: center;

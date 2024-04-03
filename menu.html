@@ -26,6 +26,8 @@
 </head>
 
 <body>
+  <div class="loader">
+  </div>
   <header>
       <nav class="navbar navbar-expand-lg bg-clear menu-nav"> <!--Ask if carouseld is needed-->
         <div class="nav-child-1 container-fluid">
@@ -51,7 +53,21 @@
                   <a class="nav-link text-white" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="menu.html">Menu</a>
+                  <div class="dropdown">
+                    <button class="btn-secondary">
+                      MENU <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="content">
+                      <a href="/veg-appz.html">Appetizers (Veg.)</a>
+                      <a href="/nonveg-appz.html">Appetizers (Non Veg.)</a>
+                      <a href="">Soups & Salads</a>
+                      <a href="">Tandoor Specialties</a>
+                      <a href="">Veg Specialties</a>
+                      <a href="">Chicken Specialties</a>
+                      <a href="">Lamb & Goat Specialties</a>
+                      <a href="">Seafood Specialties</a>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -66,201 +82,9 @@
   </header>
 
   <main>
-    <!-- Veg -->
-    <div class="menu-title">
-      <h1 class="menu-h1"><span>Veg Snacks</span></h1>
-    </div>
-
-    <div class="menu-main-content d-flex flex-row justify-content-center">
-
-      <div class="menu-supporting">
-        <div class="item">
-          <div>
-            <h2 class="item-name">Samosa</h2>
-            <h2 class="item-price">$5.99</h2>
-          </div>  
-          <p class="item-desc" >Crisp turnovers stuffed with potatoes and peas, delicately tempered with herbs and spices</p>
-        </div>
-        
-
-        <div class="item">
-          <div>
-            <h2 class="item-name ">Aloo Tikki Chaat</h2>
-            <h2 class="item-price">$7.99</h2>
-          </div>
-          <p class="item-desc">Potato cake served with chickpeas topped with yogurt mint and tamarind sauce.</p>
-        </div>
-        
-        
-        <div class="item">
-          <div>
-            <h2 class="item-name ">Chat Papdi</h2>
-            <h2 class="item-price">$6.99</h2>
-          </div>
-          <p class="item-desc">Homemade chips, mixed with potatoes, chickpeas, yogurt, coriander, and tamarind sauce.</p>
-        </div>
-        
-
-        <div class="item">
-          <div>
-            <h2 class="item-name ">Mirchi Pakora (Jalapeno Fritters)</h2>
-            <h2 class="item-price">$6.99</h2>
-          </div>
-          <p class="item-desc">Jalapenos battered with chickpea flour, seasoning and deep fried.</p>
-        </div>
-        
-
-        <div class="item">
-          <div>  
-            <h2 class="item-name">Chily Paneer</h2>
-            <h2 class="item-price">$9.99</h2>
-          </div>
-          <p class="item-desc">Cubes of paneer cheese grilled and cooked with spring onions, chillies and a touch of soya sauce served on a bed of lettuce.</p> 
-        </div>
-        
-
-        <div class="item">
-          <div>
-            <h2 class="item-name">Paneer Pakoda</h2>
-            <h2 class="item-price">$7.99</h2>
-          </div>
-          <p class="item-desc">N/A</p> 
-        </div>
-          
-
-      
-        <div class="item">
-          <div>
-            <h2 class="item-name">Dahi Vada</h2>
-            <h2 class="item-price">$7.99</h2>
-          </div>
-          <p class="item-desc">N/A</p>
-        </div>
-        
-
-        <div class="item">
-          <div>
-            <h2 class="item-name">Gobhi Manchurian</h2>
-            <h2 class="item-price ">$9.99</h2>
-          </div>
-          <p class="item-desc">Cauliflower prepared with a crispy coating and tossed with a spicy sauce.</p>
-        </div>
-        
-
-        <div class="item">
-          <div>
-            <h2 class="item-name">Onion Bhaji</h2>
-            <h2 class="item-price ">$6.99</h2>
-          </div>
-          <p class="item-desc">Finely sliced onion smothered in a simple, fragrantly spiced batter and fried to crispy perfection.</p>
-        </div>
-        
-
-        <div class="item">
-            <div>
-              <h2 class="item-name">Veg. Pakora</h2>
-              <h2 class="item-price ">$6.99</h2>
-            </div>
-            <p class="item-desc">Diced vegetables, battered and fried.</p>
-        </div>
-        
-
-        <div class="item">
-          <div>
-            <h2 class="item-name">Veg. Spring Rolls (5#)</h2>
-            <h2 class="item-price ">$6.99</h2>
-          </div>
-          <p class="item-desc">N/A</p>
-        </div>
-        
-
-      </div>
-  </div>
 
 
-  <!-- Non-Veg -->
-    <div class="menu-title">
-      <h1 class="menu-h1"><span>Non-Veg Snacks</span></h1>
-    </div>
-
-    <div class="menu-main-content d-flex flex-row justify-content-center">
-      <div class="menu-supporting">
-          <div class="item">
-            <div>
-              <h2 class="item-name">Chaaz Fry Oyster</h2>
-              <h2 class="item-price">N/A</h2>
-            </div>
-            <p class="item-desc">Buttermilk marinated fried White City oysters with pepper remoulade</p>
-          </div>
-          
-
-          <div class="item">
-            <div>
-              <h2 class="item-name">Tandoori Makai Cornets</h2>
-              <h2 class="item-price">N/A</h2>
-            </div>
-             <p class="item-desc">Sweet corn, cheese, tangy marinades served in edible cornets</p>
-          </div>
-          
-
-          <div class="item">
-            <div>
-              <h2 class="item-name">Lamb Seekh Kabab Appetizer</h2>
-              <h2 class="item-price">$11.99</h2>
-            </div>
-            <p class="item-desc">Minced lamb seasoned with fresh green chilies, mint, and ginger slowly cooked in tandoor.</p>
-          </div>
-          
-
-          <div class="item">
-            <div>
-              <h2 class="item-name">Chicken Tikka Appetizer</h2>
-              <h2 class="item-price">$10.99</h2>
-            </div>
-            <p class="item-desc">Tender chicken cubes cooked with bell pepper, onion, with spicy, sweet and tangy sauce.</p>
-          </div>
-          
-
-        
-        
-          <div class="item">
-            <div>
-              <h2 class="item-name">Chicken Tikka</h2>
-              <h2 class="item-price">N/A</h2>
-            </div>
-            <p class="item-desc">Boneless chicken marinated with yogurt, herbs, and spices barbecued.</p>
-          </div>
-          
-
-          <div class="item">
-            <div>
-              <h2 class="item-name">Chicken Pakora</h2>
-              <h2 class="item-price">$10.99</h2>
-            </div>
-            <p class="item-desc">Chicken in lightly seasoned chickpea flour batter and deep-fried.</p>
-          </div>
-          
-
-          <div class="item">
-            <div>
-              <h2 class="item-name">Namaste Special Chicken Fry (Tattukada)</h2>
-              <h2 class="item-price">$10.99</h2>
-            </div>
-            <p class="item-desc">N/A</p>
-          </div>
-          
-
-          <div class="item">
-            <div>
-              <h2 class="item-name">Fish Amritsari/Pakora</h2>
-              <h2 class="item-price">N/A</h2>
-            </div>
-            <p class="item-desc">Thin slice of fish marinated with lemon, ginger, garlic, battered with chickpea flour and shallow fry.</p>
-          </div>
-          
-        </div>
-    </div>
-
+  
     <!-- Soups & Salads -->
     <div class="menu-title">
       <h1 class="menu-h1"><span>Soups & Salads</span></h1>

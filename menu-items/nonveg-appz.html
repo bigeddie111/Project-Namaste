@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <title>Namaste Restaurant</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        <script src="script.js" defer></script>
+        <link href="../style.css" rel="stylesheet" type="text/css" />
+        <script src="../script.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -17,11 +16,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://fonts.cdnfonts.com/css/futura-lt" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/bcf8f471a4.js" crossorigin="anonymous"></script>
+      
     </head>
 
     <body>
@@ -29,13 +30,13 @@
       </div>
 
       <header>
-        <nav class="navbar navbar-expand-lg bg-clear about-nav"> <!--Ask if carouseld is needed-->
+        <nav class="navbar navbar-expand-lg bg-clear menu-nav"> <!--Ask if carouseld is needed-->
           <div class="nav-child-1 container-fluid">
             <a class="navbar-brand text-white " href="#">
-              <img class="navbar-img"src="./images/logo-namasteIndianPalace.png" width="50%">
+              <img class="navbar-img"src="../images/logo-namasteIndianPalace.png" width="50%">
             </a> <!--LOGO TO COME HERE-->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <img src="./images/56763.png">
+              <img src="../images/56763.png">
             </button>
             <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header">
@@ -44,13 +45,13 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe -5">
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="index.html">Home</a>
+                    <a class="nav-link text-white" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                    <a class="nav-link text-white" href="../contact.html">Contact</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="about.html">About</a>
+                    <a class="nav-link text-white" href="../about.html">About</a>
                   </li>
                   <li class="nav-item">
                     <div class="dropdown">
@@ -58,8 +59,8 @@
                         MENU <i class="fa-solid fa-caret-down"></i>
                       </button>
                       <div class="content">
-                        <a href="/veg-appz.html">Appetizers (Veg.)</a>
-                        <a href="/nonveg-appz.html">Appetizers (Non Veg.)</a>
+                        <a href="/menu-items/veg-appz.html">Appetizers (Veg.)</a>
+                        <a href="/menu-items/nonveg-appz.html">Appetizers (Non Veg.)</a>
                         <a href="">Soups & Salads</a>
                         <a href="">Tandoor Specialties</a>
                         <a href="">Veg Specialties</a>
@@ -80,34 +81,92 @@
           </div>  
         </nav>
     </header>
-
-        <main>
-          <div id="top-3-about">
-
-            <div class="card">
-              <img class="card-img-top" src="./images/PHOTO-2021-03-01-17-35-19.jpg" alt="Card image cap">
-              <p class="card-text">With a blend of ancestral recipes and modern flair, Namaste has emerged as a culinary haven, offering a rich tapestry of flavors that transports diners on a gastronomic journey through India's diverse regions</p>
+     
+      <!-- Menu Section -->
+     <!-- Non-Veg -->
+    <div class="menu-title">
+        <h1 class="menu-h1"><span>Appetizers (Non Veg.)</span></h1>
+      </div>
+  
+      <div class="menu-main-content d-flex flex-row justify-content-center">
+        <div class="menu-supporting">
+            <div class="item">
+              <div>
+                <h2 class="item-name">Chaaz Fry Oyster</h2>
+                <h2 class="item-price">N/A</h2>
+              </div>
+              <p class="item-desc">Buttermilk marinated fried White City oysters with pepper remoulade</p>
             </div>
-
-            <div class="card">
-              <p class="card-text">Namaste has become synonymous with culinary excellence, creating an immersive dining experience. Namaste expertly melds traditional Indian flavors with modern presentation to transport patrons through India's culinary landscape.</p>
-              <img class="card-img-top" src="./images/SuvaiDosa_MetalTray_SeparateIngredients-2000x1183.jpg" alt="Card image cap">
+            
+  
+            <div class="item">
+              <div>
+                <h2 class="item-name">Tandoori Makai Cornets</h2>
+                <h2 class="item-price">N/A</h2>
+              </div>
+               <p class="item-desc">Sweet corn, cheese, tangy marinades served in edible cornets</p>
             </div>
-
-            <div class="card">
-              <img class="card-img-top" src="./images/20161219132635-sanjeev-kapoor-editedvvv.jpeg" alt="Card image cap">
-              <p class="card-text">At Namaste, we are more than just a restaurant; we are curators of unforgettable experiences. From humble beginnings, our dedication to quality, authenticity, and personalized service has been unwavering</p>
+            
+  
+            <div class="item">
+              <div>
+                <h2 class="item-name">Lamb Seekh Kabab Appetizer</h2>
+                <h2 class="item-price">$11.99</h2>
+              </div>
+              <p class="item-desc">Minced lamb seasoned with fresh green chilies, mint, and ginger slowly cooked in tandoor.</p>
             </div>
+            
+  
+            <div class="item">
+              <div>
+                <h2 class="item-name">Chicken Tikka Appetizer</h2>
+                <h2 class="item-price">$10.99</h2>
+              </div>
+              <p class="item-desc">Tender chicken cubes cooked with bell pepper, onion, with spicy, sweet and tangy sauce.</p>
+            </div>
+            
+  
+          
+          
+            <div class="item">
+              <div>
+                <h2 class="item-name">Chicken Tikka</h2>
+                <h2 class="item-price">N/A</h2>
+              </div>
+              <p class="item-desc">Boneless chicken marinated with yogurt, herbs, and spices barbecued.</p>
+            </div>
+            
+  
+            <div class="item">
+              <div>
+                <h2 class="item-name">Chicken Pakora</h2>
+                <h2 class="item-price">$10.99</h2>
+              </div>
+              <p class="item-desc">Chicken in lightly seasoned chickpea flour batter and deep-fried.</p>
+            </div>
+            
+  
+            <div class="item">
+              <div>
+                <h2 class="item-name">Namaste Special Chicken Fry (Tattukada)</h2>
+                <h2 class="item-price">$10.99</h2>
+              </div>
+              <p class="item-desc">N/A</p>
+            </div>
+            
+  
+            <div class="item">
+              <div>
+                <h2 class="item-name">Fish Amritsari/Pakora</h2>
+                <h2 class="item-price">N/A</h2>
+              </div>
+              <p class="item-desc">Thin slice of fish marinated with lemon, ginger, garlic, battered with chickpea flour and shallow fry.</p>
+            </div>
+            
           </div>
+      </div>
+  
 
-          <div id="about-view-our-menu">
-            <h1>View Our Menu</h1>
-          </div>
-
-          <div id="about-main-last">
-            <p>  Starting in 2020 as a humble catering service, Namaste has evolved into a cornerstone of culinary innovation. Beyond food, our ethos revolves around building meaningful connections, fostering a community around exceptional cuisine, and sharing the warmth of Indian hospitality with every customer we serve.</p>
-          </div>
-        </main>
         <footer class="d-flex flex-row">
             <div class="footer-content-1 d-flex flex-column w-50">
               <div class="footer-content-1-sup-content-1 d-flex flex-row justify-content-between" >
@@ -148,6 +207,4 @@
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
-    </body>
-
 </html>
