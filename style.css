@@ -1,0 +1,501 @@
+/* NOTES TO SELF
+1. Fix collapese navbar
+2. Do CSS Styling After HTML
+2a. Try different fonts (futura)
+3. Add breakpoints after site is done
+4. Images are only samples, change after getting the right ones (Using ones without copyright or CC License) Watch https://tinyurl.com/446ukujv & https://tinyurl.com/54td3r96 & https://tinyurl.com/pwaerwrv 
+5. Black & Yellow Color Theme
+*/
+
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* Navigation */
+
+.index-img{
+    width: 100%;
+}
+
+#offcanvasNavbar ul li{
+    font-family: "Poppins";
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-right: 40px;
+}
+
+
+
+header .index-nav{
+    background-image: url(./images/l-intro-1645057933.jpg);
+    background-size: cover;
+    height: 60rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header .contact-nav {
+    background-image: url(./images/GettyImages-12925636271-ezgif.com-crop.jpg);
+    background-size: cover;
+    height: 60rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header .about-nav {
+    background-image: url(./images/istock-478831658-ezgif.com-webp-to-jpg-converter.jpg);
+    background-size: cover;
+    height: 60rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header .menu-nav{
+    background-image: url(./images/Chicken_Grilled_Blog_2-ezgif.com-crop.webp);
+    background-size: cover;
+    height: 60rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.navbar-toggler img {
+    width: 80px;
+}
+
+
+.down-arrow{
+    display: flex;
+    flex-direction: column;
+}
+
+ion-icon[name="chevron-down-outline"] {
+    color: white;
+    font-size: 70px;
+    transition: .5s linear;
+}
+
+
+.down-arrow ion-icon[name="chevron-down-outline"]:nth-child(1){
+    margin-bottom: -30px;
+}
+
+.down-arrow ion-icon[name="chevron-down-outline"]:nth-child(2){
+    margin-bottom: -10px;
+}
+
+/* Home Main Content  */
+
+#home-main-content{
+    padding: 70px;
+    justify-content: center;
+}
+
+.home-main-content-img img{
+    width: 400px;
+    margin-right: 50px;
+    border-radius: 18px;
+}
+
+.home-main-content-text{
+    margin-left: 0;
+    width: 50%;
+    font-size: 30px;
+    font-family: "Futura LT";
+    font-weight: 400;
+    margin-top: 2em;
+    
+}
+
+/* Home Features Content */
+
+#home-features{
+    margin-bottom: 40px;
+}
+
+.home-features-content-1{
+   background-image: url(./images/slowcookerchickentikkamasala.jpeg);
+   background-size: cover;
+   width: 50%;
+   height: 500px;
+}
+
+.home-features-content-1 h1{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 55px;
+    font-family: "Della Respira";
+    color: white;
+}
+
+.home-features-content-2{
+    background-color: #FF6B00;
+    width: 50%;
+}
+
+.home-features-content-2 h1{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 55px;
+    font-family:"Della Respira" ;
+    color: white;
+}
+
+.home-features-content-1 button {
+    font-size: 2.5em;
+    width: 50%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.home-features-content-2 img{
+    width: 10%;
+    height: 130px;
+    filter: drop-shadow(5px 5px 1px #141414);
+    margin-right: 20px ;
+}
+
+/* Contact Form */
+
+.contact h1{
+    font-family: "Della Respira";
+    font-size: 56px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.contact-form{
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto 9em;
+    margin-bottom: 5em;
+    border: solid black 1.5px;
+    border-radius: 10px;
+}
+
+.contact-form input{
+    margin: auto;
+    margin-top: 3em;
+    font-size: 26px;
+    font-family: "Playfair Display";
+}
+
+.contact-form-row-3 input::placeholder {
+    text-align: center;
+    margin-top: -100%; 
+    
+}
+
+.contact-form-row-3 input {
+    width: 30em;
+    height: 10em;
+    margin-bottom: 4em;
+}
+
+
+/* About */
+
+
+#top-3-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#top-3-about .card {
+    width: 25rem;
+    margin-top: 45px;
+    margin-bottom: 13em;
+    border: none;
+    height: 16em;
+}
+
+#top-3-about .card-text {
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 25px;
+    margin-top: 1em;
+}
+
+#top-3-about .card:nth-child(2) .card-text { 
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 25px;
+    margin-top: 2em;
+    margin-bottom: 1em ;
+}
+
+#top-3-about .card:nth-child(1) .card-img-top{
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;    
+}
+
+
+#top-3-about .card:nth-child(2) .card-img-top{
+    border-bottom-left-radius: 190px;
+    border-bottom-right-radius: 190px;
+}
+
+
+#top-3-about .card:nth-child(3) .card-img-top{
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+
+#about-view-our-menu{
+    background-image: url(./images/pexels-marvin-ozz-2474661.jpg);
+    background-size: cover;
+    height: 50em;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10em;
+}
+
+#about-view-our-menu h1 {
+    font-family: "Playfair Display";
+    color: white;
+    font-weight: bold;
+    font-size: 90px;
+    text-align: center;
+    width: 30%;
+}
+
+#about-main-last p{
+    text-align: center;
+    margin: 100px 30px;
+    font-family: "Satisfy";
+    font-size: 40px;
+}
+
+/* Menu */
+
+.menu-h1{
+    text-align: center;
+    font-size: 56px;
+    font-family: "Della Respira";
+    margin-top: 2em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.menu-h1::before{
+    content: "";
+    height: 2px;
+    width: 50%;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    z-index: -2;
+    
+}
+
+ .menu-h1::after{
+    content: "";
+    height: 2px;
+    width: 50vw;
+    background-color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    z-index: -2;
+} 
+
+.menu-h1 span{
+    background: white;
+    padding: 0 20px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.menu-supporting{
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    padding: 5%;
+    column-gap: 3%;
+}
+ 
+.item{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #d6d6d6;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+.item > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-name{
+    font-family: "Futura LT";
+    font-weight: 400;
+    font-size: 30px;
+    /* display: inline-block; */
+
+}
+
+.item-price {
+    font-family: "Futura LT";
+    font-weight: 400;
+    font-size: 30px;
+    /* display: inline-block; */
+    margin-left: auto;
+    margin-right: 15%;
+} 
+
+
+.item-desc{
+    font-family: "Futura LT";
+    font-size: 20px;
+    margin-bottom: 1.5em;
+    width: 90%;
+} 
+
+/* Footer */
+
+footer{
+    margin-top: 8em;
+    margin-bottom: 70px;
+}
+
+.footer-content-1 h2 {
+    font-family: "Della Respira";
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer-content-1 p {
+    font-family: "Poppins";
+    font-size: 20px;
+}
+
+.footer-content-1-sup-content-1{
+    margin-top: 12%;
+    margin-bottom: 6em;
+}
+
+
+.footer-content-1-sup-content-1 div:nth-child(1) ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-content-1-sup-content-1 div:nth-child(1) ul li .fa-brands {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+.footer-content-1-sup-content-1 div:nth-child(1) ul li .fa-brands:hover {
+    color: #ffffff;
+}
+.footer-content-1-sup-content-1 div:nth-child(1) ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s; 
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.footer-content-1-sup-content-1 div:nth-child(1) ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.footer-content-1-sup-content-1 div:nth-child(1) ul li:nth-child(1) a:hover {
+    background-color: #e4405f;
+}
+.footer-content-1-sup-content-1 div:nth-child(1) ul li:nth-child(2) a:hover {
+    background-color: #3b5999;
+}
+
+.footer-content-1-sup-content-1 div:nth-child(1) ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.footer-content-1-sup-content-1 div:nth-child(1) ul li .fa-brands {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+
+
+.footer-content-2{
+    width: 45%;
+    height: 40em;
+    background-color: #F9753C;
+}
+
+.footer-content-2 h1{
+    margin-top: 20%;
+    font-size: 70px;
+    font-family: "Della Respira";
+    color: white;
+}
+
+.footer-content-2 button{
+    margin-top: 30px;
+    font-size: 50px;
+    padding: 0 20px;
+}
+
+.footer-content-2 p{
+    font-size: 30px;
+    margin-top: 70px;
+}
+
+
+
+/* Buttons */
+
+.button-orng-1{
+    background-color: #FF6B00;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-family: "Poppins";
+    font-weight: normal;
+}
+
+.button-orng-2{
+    background-color: white;
+    color: #FF6B00;
+    border: none;
+    border-radius: 100px;
+    font-family: "Poppins";
+    font-weight: normal;
+}
+

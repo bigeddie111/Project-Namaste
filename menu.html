@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" initial-scale="1.0">
+  <title>Namaste Restaurant</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Della+Respira&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://fonts.cdnfonts.com/css/futura-lt" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/bcf8f471a4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg bg-clear menu-nav"> <!--Ask if carouseld is needed-->
+        <div class="nav-child-1 container-fluid">
+          <a class="navbar-brand text-white " href="#">
+            <img class="navbar-img"src="./images/logo-namasteIndianPalace.png" width="50%">
+          </a> <!--LOGO TO COME HERE-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <img src="./images/56763.png">
+          </button>
+          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close justify-content-start color-" data-bs-dismiss="offcanvas" aria-label="Close"></button> <!--Style it, add animation-->
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe -5">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="menu.html">Menu</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="down-arrow">
+          <ion-icon id ="down-arrow-1" name="chevron-down-outline"></ion-icon>
+          <ion-icon id ="down-arrow-2" name="chevron-down-outline"></ion-icon>
+        </div>  
+      </nav>
+  </header>
+
+  <main>
+    <!-- Veg -->
+    <div class="menu-title">
+      <h1 class="menu-h1"><span>Veg Snacks</span></h1>
+    </div>
+
+    <div class="menu-main-content d-flex flex-row justify-content-center">
+
+      <div class="menu-supporting">
+        <div class="item">
+          <div>
+            <h2 class="item-name">Samosa</h2>
+            <h2 class="item-price">$5.99</h2>
+          </div>  
+          <p class="item-desc" >Crisp turnovers stuffed with potatoes and peas, delicately tempered with herbs and spices</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name ">Aloo Tikki Chaat</h2>
+            <h2 class="item-price">$7.99</h2>
+          </div>
+          <p class="item-desc">Potato cake served with chickpeas topped with yogurt mint and tamarind sauce.</p>
+        </div>
+        
+        
+        <div class="item">
+          <div>
+            <h2 class="item-name ">Chat Papdi</h2>
+            <h2 class="item-price">$6.99</h2>
+          </div>
+          <p class="item-desc">Homemade chips, mixed with potatoes, chickpeas, yogurt, coriander, and tamarind sauce.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name ">Mirchi Pakora (Jalapeno Fritters)</h2>
+            <h2 class="item-price">$6.99</h2>
+          </div>
+          <p class="item-desc">Jalapenos battered with chickpea flour, seasoning and deep fried.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>  
+            <h2 class="item-name">Chily Paneer</h2>
+            <h2 class="item-price">$9.99</h2>
+          </div>
+          <p class="item-desc">Cubes of paneer cheese grilled and cooked with spring onions, chillies and a touch of soya sauce served on a bed of lettuce.</p> 
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Paneer Pakoda</h2>
+            <h2 class="item-price">$7.99</h2>
+          </div>
+          <p class="item-desc">N/A</p> 
+        </div>
+          
+
+      
+        <div class="item">
+          <div>
+            <h2 class="item-name">Dahi Vada</h2>
+            <h2 class="item-price">$7.99</h2>
+          </div>
+          <p class="item-desc">N/A</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Gobhi Manchurian</h2>
+            <h2 class="item-price ">$9.99</h2>
+          </div>
+          <p class="item-desc">Cauliflower prepared with a crispy coating and tossed with a spicy sauce.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Onion Bhaji</h2>
+            <h2 class="item-price ">$6.99</h2>
+          </div>
+          <p class="item-desc">Finely sliced onion smothered in a simple, fragrantly spiced batter and fried to crispy perfection.</p>
+        </div>
+        
+
+        <div class="item">
+            <div>
+              <h2 class="item-name">Veg. Pakora</h2>
+              <h2 class="item-price ">$6.99</h2>
+            </div>
+            <p class="item-desc">Diced vegetables, battered and fried.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Veg. Spring Rolls (5#)</h2>
+            <h2 class="item-price ">$6.99</h2>
+          </div>
+          <p class="item-desc">N/A</p>
+        </div>
+        
+
+      </div>
+  </div>
+
+
+  <!-- Non-Veg -->
+    <div class="menu-title">
+      <h1 class="menu-h1"><span>Non-Veg Snacks</span></h1>
+    </div>
+
+    <div class="menu-main-content d-flex flex-row justify-content-center">
+      <div class="menu-supporting">
+          <div class="item">
+            <div>
+              <h2 class="item-name">Chaaz Fry Oyster</h2>
+              <h2 class="item-price">N/A</h2>
+            </div>
+            <p class="item-desc">Buttermilk marinated fried White City oysters with pepper remoulade</p>
+          </div>
+          
+
+          <div class="item">
+            <div>
+              <h2 class="item-name">Tandoori Makai Cornets</h2>
+              <h2 class="item-price">N/A</h2>
+            </div>
+             <p class="item-desc">Sweet corn, cheese, tangy marinades served in edible cornets</p>
+          </div>
+          
+
+          <div class="item">
+            <div>
+              <h2 class="item-name">Lamb Seekh Kabab Appetizer</h2>
+              <h2 class="item-price">$11.99</h2>
+            </div>
+            <p class="item-desc">Minced lamb seasoned with fresh green chilies, mint, and ginger slowly cooked in tandoor.</p>
+          </div>
+          
+
+          <div class="item">
+            <div>
+              <h2 class="item-name">Chicken Tikka Appetizer</h2>
+              <h2 class="item-price">$10.99</h2>
+            </div>
+            <p class="item-desc">Tender chicken cubes cooked with bell pepper, onion, with spicy, sweet and tangy sauce.</p>
+          </div>
+          
+
+        
+        
+          <div class="item">
+            <div>
+              <h2 class="item-name">Chicken Tikka</h2>
+              <h2 class="item-price">N/A</h2>
+            </div>
+            <p class="item-desc">Boneless chicken marinated with yogurt, herbs, and spices barbecued.</p>
+          </div>
+          
+
+          <div class="item">
+            <div>
+              <h2 class="item-name">Chicken Pakora</h2>
+              <h2 class="item-price">$10.99</h2>
+            </div>
+            <p class="item-desc">Chicken in lightly seasoned chickpea flour batter and deep-fried.</p>
+          </div>
+          
+
+          <div class="item">
+            <div>
+              <h2 class="item-name">Namaste Special Chicken Fry (Tattukada)</h2>
+              <h2 class="item-price">$10.99</h2>
+            </div>
+            <p class="item-desc">N/A</p>
+          </div>
+          
+
+          <div class="item">
+            <div>
+              <h2 class="item-name">Fish Amritsari/Pakora</h2>
+              <h2 class="item-price">N/A</h2>
+            </div>
+            <p class="item-desc">Thin slice of fish marinated with lemon, ginger, garlic, battered with chickpea flour and shallow fry.</p>
+          </div>
+          
+        </div>
+    </div>
+
+    <!-- Soups & Salads -->
+    <div class="menu-title">
+      <h1 class="menu-h1"><span>Soups & Salads</span></h1>
+    </div>
+
+    <div class="menu-main-content d-flex flex-row justify-content-center">
+      <div class="menu-supporting">
+        <div class="item">
+          <div>
+            <h2 class="item-name">Tomato Soup</h2>
+            <h2 class="item-price">$5.99</h2>
+          </div>
+          <p class="item-desc">Spiced Indian tomato soup.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Cream Of Mushroom Soup</h2>
+            <h2 class="item-price">$5.99</h2>
+          </div>
+          <p class="item-desc">N/A</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Cream of Chicken Soup</h2>
+            <h2 class="item-price">$5.99</h2>
+          </div>
+          <p class="item-desc">N/A</p>
+        </div>
+        
+
+        
+        <div class="item">
+          <div>
+            <h2 class="item-name">Yellow Lentil Soup</h2>
+            <h2 class="item-price">$5.99</h2>
+          </div>
+          <p class="item-desc">Yellow lentils seasoned with herbs and spices.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">House Garden Salad</h2>
+            <h2 class="item-price">$5.99</h2>
+          </div>
+          <p class="item-desc">Lettuce, tomatoes, cucumbers, and onions tossed in a vinaigrette sauce</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Kachumber Salad</h2>
+            <h2 class="item-price">$5.99</h2>
+          </div>
+          <p class="item-desc">Chopped fresh salad.</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Tandoor Specialties -->
+    <div class="menu-title">
+      <h1 class="menu-h1"><span>Tandoor Specialties</span></h1>
+    </div>
+
+    <div class="menu-main-content d-flex flex-row justify-content-center">
+      <div class="menu-supporting">
+        <div class="item">
+          <div>
+            <h2 class="item-name">Chicken Kebab</h2>
+            <h2 class="item-price">$16.99</h2>
+          </div>
+          <p class="item-desc">Chicken Breast marinated in chef's special, secret spices, and mustard sauce.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Hariyali Chicken Tikka</h2>
+            <h2 class="item-price">$16.99</h2>
+          </div>
+          <p class="item-desc">N/A</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Chicken Tikka</h2>
+            <h2 class="item-price">$16.99</h2>
+          </div>
+          <p class="item-desc">Chicken marinated with yogurt and freshly ground spices, grilled in tandoor.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Chicken Malai Tikka</h2>
+            <h2 class="item-price">$16.99</h2>
+          </div>
+          <p class="item-desc">Boneless chicken marinated with cheese and cream, grilled to perfection in tandoor.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Salmon Fish Tikka</h2>
+            <h2 class="item-price">$17.99</h2>
+          </div>
+          <p class="item-desc">Delicate fish pieces marinated in olive oil, tandoori masala, grilled in our tandoor.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Mughalai Shrimp</h2>
+            <h2 class="item-price">$17.99</h2>
+          </div>
+          <p class="item-desc">Jumbo shrimp grilled with exotic indian spices.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Lamb Chops</h2>
+            <h2 class="item-price">$15.99</h2>
+          </div>
+          <p class="item-desc">Fresh tender lamb chops marinated with lemon juice, olive oil, ginger, herbs and freshly ground spices and then grilled in charcoal oven.</p>
+        </div>
+        
+      
+        <div class="item">
+          <div>
+            <h2 class="item-name">Tandoor Paneer Tikka</h2>
+            <h2 class="item-price">$15.99</h2>
+          </div>
+          <p class="item-desc">Homemade cheese marinated in chef's special recipe and grilled in tandoor.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Lamb Sheek Kabab</h2>
+            <h2 class="item-price">$17.99</h2>
+          </div>
+          <p class="item-desc">Minced lamb seasoned with fresh green chilies, mint, and ginger slowly cooked in tandoor.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Tandoor Lobster</h2>
+            <h2 class="item-price">$27.99</h2>
+          </div>
+          <p class="item-desc">Whole tandoori lobster marinated with fresh garlic, ginger touch of green chilli paste, lime juice and indian herbs, then delicately cooked in a clay oven.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Tandoori Shrimp</h2>
+            <h2 class="item-price">$19.99</h2>
+          </div>
+          <p class="item-desc">N/A</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Chicken Tandoori Half</h2>
+            <h2 class="item-price">$15.99</h2>
+          </div>
+          <p class="item-desc">Chicken on the bone marinated in traditional spices and yogurt.</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Chicken Tandoori Full</h2>
+            <h2 class="item-price">$22.99</h2>
+          </div>
+          <p class="item-desc">N/A</p>
+        </div>
+        
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Tandoori Mixed Grill Platter</h2>
+            <h2 class="item-price">$25.99</h2>
+          </div>
+          <p class="item-desc">Tandoori platter served with chicken kabab, tandoori shrimp, and lamb seekh kabab</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Veg Specialties -->
+    <div class="menu-title">
+      <h1 class="menu-h1"><span>Veg Specialties</span></h1>
+    </div>
+
+    <div class="menu-main-content d-flex flex-row justify-content-center">
+      <div class="menu-supporting">
+        <div class="item">
+          <div>
+            <h2 class="item-name">Paneer Makhni</h2>
+            <h2 class="item-price">$15.99</h2>
+          </div>
+          <p class="item-desc">Cubes of cottage cheese cooked in silky makhani sauce made with tomatoes, flavorful spices, finished with butter and herbs.</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Mattar Paneer</h2>
+            <h2 class="item-price">$14.99</h2>
+            </div>
+          <p class="item-desc">Green peas and cottage cheese simmered in onion and tomato gravy.</p>
+        </div>
+
+        <div class="item">
+          <div>
+              <h2 class="item-name">Saag Paneer</h2>
+              <h2 class="item-price">$14.99</h2>
+            </div>
+            <p class="item-desc">Spinach cooked with cottage cheese, delicately spiced and cooked in a creamy onion and tomato sauce</p>
+        </div>
+
+        <div class="item">
+          <div>
+              <h2 class="item-name">Kadai Paneer</h2>
+              <h2 class="item-price">$14.99</h2>
+            </div>
+            <p class="item-desc">Homemade cottage cheese cooked with fresh onion, bell peppers, tomatoes and whole spices finished with chef?s sauce.</p>
+        </div>
+
+        <div class="item">
+          <div>
+              <h2 class="item-name">Malai Kofta</h2>
+              <h2 class="item-price">$13.99</h2>
+            </div>
+            <p class="item-desc">Cottage cheese and potato croquettes mixed in with rich nut creamy sauce.</p>
+        </div>
+
+        <div class="item">
+          <div>
+              <h2 class="item-name">Bhindi Do Payaza</h2>
+              <h2 class="item-price">$13.99</h2>
+            </div>
+            <p class="item-desc">Okra cooked with onion, tomatoes, and spices</p>
+        </div>
+
+        <div class="item">
+          <div>
+              <h2 class="item-name">Gobhi Aloo</h2>
+              <h2 class="item-price">$13.99</h2>
+            </div>
+            <p class="item-desc">Cauliflower florets with potatoes and spices.</p>
+        </div>
+
+        <div class="item">
+          <div>
+              <h2 class="item-name">Navratan Korma</h2>
+              <h2 class="item-price">$13.99</h2>
+            </div>
+            <p class="item-desc">Blend of fresh vegetables in nut and creamy curry sauce. </p>
+        </div>
+
+        <div class="item">
+          <div>
+              <h2 class="item-name">Baingan Bharta</h2>
+              <h2 class="item-price">$13.99</h2>
+            </div>
+            <p class="item-desc">An extraordinary dish of baked eggplant, sauteed with tomatoes, onions, and spices.</p>
+        </div>
+
+        <div class="item">
+          <div>
+              <h2 class="item-name">Dal Makhni</h2>
+              <h2 class="item-price">$12.99</h2>
+            </div>
+            <p class="item-desc">Black Lentil & Kidney beans cooked on a slow fire overnight on tandoor finally finished with butter cream and herbs.</p>
+        </div>
+
+        <div class="item">
+          <div>
+              <h2 class="item-name">Dal Tadka</h2>
+              <h2 class="item-price">$11.99</h2>
+            </div>
+            <p class="item-desc">Yellow Lentils simmered with ginger garlic, tomatoes, and onions.</p>
+        </div>
+
+        <div class="item">
+          <div>
+              <h2 class="item-name">Paneer Tikka Masala</h2>
+              <h2 class="item-price">$15.99</h2>
+            </div>
+            <p class="item-desc">Cubes of cottage cheese cooked with a creamy tomato sauce, onions, bell peppers, and spices.</p>
+        </div>
+
+        <div class="item">
+          <div>
+              <h2 class="item-name">Makai Palak</h2>
+              <h2 class="item-price">$13.99</h2>
+            </div>
+            <p class="item-desc">Freshly chopped spinach cooked with Kernel corns with a touch of fenugreek leaves.</p>
+        </div>
+
+        <div class="item">
+          <div>
+              <h2 class="item-name">Nizam Hindi</h2>
+              <h2 class="item-price">$13.99</h2>
+            </div>
+            <p class="item-desc">Fresh vegetables cooked in tomatoes and onion sauce.</p>
+        </div>
+
+        <div class="item">
+          <div>
+              <h2 class="item-name">Channa Masala</h2>
+              <h2 class="item-price">$13.99</h2>
+            </div>
+            <p class="item-desc">Galbanzo beans cooked with flavorful spices, Most Versatile delicacy in Northern India.</p>
+        </div>
+
+        
+        <div class="item">
+          <div>
+              <h2 class="item-name">Aloo Mattar</h2>
+              <h2 class="item-price">$13.99</h2>
+            </div>
+            <p class="item-desc">Green peas and potatoes cooked with onions, tomato and spices.</p>
+        </div>
+
+        <div class="item">
+          <div>
+              <h2 class="item-name">Gobi Manchurian</h2>
+              <h2 class="item-price">$15.99</h2>
+            </div>
+            <p class="item-desc">N/A</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Chicken Specialties -->
+    <div class="menu-title">
+      <h1 class="menu-h1"><span>Chicken Specialties</span></h1>
+    </div>
+
+    <div class="menu-main-content d-flex flex-row justify-content-center">
+      <div class="menu-supporting">
+        <div class="item">
+          <div>
+            <h2 class="item-name">Chicken Tikka Masala</h2>
+            <h2 class="item-price">$16.99</h2>
+          </div>
+          <p class="item-desc">King of Curries! Grilled chicken tikka cooked with capcicum and onions in rich gravy enriched with butter and aromatic spices.</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Chicken Curry</h2>
+            <h2 class="item-price">$15.99</h2>
+          </div>
+          <p class="item-desc">Chicken in traditional indian curry sauce.</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Chicken Vindaloo</h2>
+            <h2 class="item-price">$15.99</h2>
+          </div>
+          <p class="item-desc">Chicken curry cooked with potatoes and herbs.</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Chicken Saag</h2>
+            <h2 class="item-price">$15.99</h2>
+          </div>
+          <p class="item-desc">A delectable combination of farm fresh spinach cooked in chef?s special sauce and brought to perfection in a blend of curried chicken.</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Chicken Kadai</h2>
+            <h2 class="item-price">$15.99</h2>
+          </div>
+          <p class="item-desc">Chicken cooked with fresh tomatoes, onions, and bell peppers topped with fresh indian herbs.</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Chicken Korma</h2>
+            <h2 class="item-price">$16.99</h2>
+          </div>
+          <p class="item-desc">Chicken cooked in nut and rich creamy sauce.</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Butter Chicken</h2>
+            <h2 class="item-price">$16.00</h2>
+          </div>
+          <p class="item-desc">Chicken tikka cooked in tomato cream and butter sauce.</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Mango Chicken</h2>
+            <h2 class="item-price">N/A</h2>
+          </div>
+          <p class="item-desc">Chicken cooked in an aromatic, sweet and spicy mango sauce.</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Chicken Zafrani</h2>
+            <h2 class="item-price">N/A</h2>
+          </div>
+          <p class="item-desc">It is a typical chicken curry recipe that is high in flavours and is cooked in cashew paste to add a vibrant and mouthwatering flavour</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Chilli Chicken</h2>
+            <h2 class="item-price">$15.99</h2>
+          </div>
+          <p class="item-desc">N/A</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Chicken 65</h2>
+            <h2 class="item-price">$16.99</h2>
+          </div>
+          <p class="item-desc">N/A</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Lamb & Goat Specialties -->
+    <div class="menu-title">
+      <h1 class="menu-h1"><span>Lamb & Goat Specialties</span></h1>
+    </div>
+
+    <div class="menu-main-content d-flex flex-row justify-content-center">
+      <div class="menu-supporting">
+        <div class="item">
+          <div>
+            <h2 class="item-name">Lamb Curry</h2>
+            <h2 class="item-price">$16.99</h2>
+          </div>
+          <p class="item-desc">Tender lamb pieces cooked in true indian curry style</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Lamb Vindaloo</h2>
+            <h2 class="item-price">$16.99</h2>
+          </div>
+          <p class="item-desc">Juicy lamb and potatoes cooked in onion gravy with extra spicy sauce</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Lamb Saag</h2>
+            <h2 class="item-price">$16.99</h2>
+          </div>
+          <p class="item-desc">Exotic preparation of lamb pieces moistened with spinach, tomato, and spices</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Lamb Korma</h2>
+            <h2 class="item-price">$17.99</h2>
+          </div>
+          <p class="item-desc">Succulent pieces of lamb cooked with onion and rich nut creamy sauce</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Goat Curry</h2>
+            <h2 class="item-price">$18.99</h2>
+          </div>
+          <p class="item-desc">Tender Goat pieces cooked in true Indian curry style</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Goat Tikka Masala</h2>
+            <h2 class="item-price">$19.99</h2>
+          </div>
+          <p class="item-desc">Tender goat meat cooked in a butter sauce with onions and bell peppers</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Goat Saag</h2>
+            <h2 class="item-price">$18.99</h2>
+          </div>
+          <p class="item-desc">N/A</p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name">Lamb Tikka Masala</h2>
+            <h2 class="item-price">$17.99</h2>
+          </div>
+          <p class="item-desc">Lamb Cooked in a butter sauce with onions and bell peppers</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seafood Specialties -->
+    <div class="menu-title">
+      <h1 class="menu-h1"><span>Seafood Specialties</span></h1>
+    </div>
+
+    <div class="menu-main-content d-flex flex-row justify-content-center">
+      <div class="menu-supporting">
+        <div class="item">
+          <div>
+            <h2 class="item-name"></h2>
+            <h2 class="item-price">$</h2>
+          </div>
+          <p class="item-desc"></p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name"></h2>
+            <h2 class="item-price">$</h2>
+          </div>
+          <p class="item-desc"></p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name"></h2>
+            <h2 class="item-price">$</h2>
+          </div>
+          <p class="item-desc"></p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name"></h2>
+            <h2 class="item-price">$</h2>
+          </div>
+          <p class="item-desc"></p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name"></h2>
+            <h2 class="item-price">$</h2>
+          </div>
+          <p class="item-desc"></p>
+        </div>
+
+        <div class="item">
+          <div>
+            <h2 class="item-name"></h2>
+            <h2 class="item-price">$</h2>
+          </div>
+          <p class="item-desc"></p>
+        </div>
+        
+      </div>
+     </div>
+
+  </main>
+
+  <footer class="d-flex flex-row">
+      <div class="footer-content-1 d-flex flex-column w-50">
+        <div class="footer-content-1-sup-content-1 d-flex flex-row justify-content-between ">
+          <div class="m-auto">
+            <h2>Social</h2>
+            <ul>
+              <li><a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a target="_blank" href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="m-auto">
+            <h2>Address</h2>
+            <p class="text-center">2601 Maury St BLDG 2, Richmond, VA 23224</p> <!--Change-->
+          </div>
+        </div> 
+        <div class="footer-content-1-sup-content-2 d-flex w-100 justify-content-center">
+          <div>
+            <h2>Office Hours</h2>
+            <p>Lorem</p>
+            <p>Lorem</p>
+            <p>Lorem</p>
+            <p>Lorem</p>
+            <p>Lorem</p>
+            <p>Lorem</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-content-2 d-flex flex-column align-items-center">
+        <h1>GET IN TOUCH</h1>
+        <button class="button-orng-2">CONTACT US</button>
+        <p>or call (###)###-####</p>
+      </div>
+
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+  </html>
+</body>
