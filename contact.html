@@ -30,42 +30,45 @@
         <nav class="navbar navbar-expand-lg bg-clear contact-nav"> <!--Ask if carouseld is needed-->
           <div class="nav-child-1 container-fluid">
             <a class="navbar-brand text-white " href="#">
-              <img class="navbar-img"src="./images/logo-namasteIndianPalace.png" width="50%">
+              <img class="navbar-img"src="../images/logo-namasteIndianPalace.png" width="50%">
             </a> <!--LOGO TO COME HERE-->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <img src="./images/56763.png">
+              <img src="../images/56763.png">
             </button>
             <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header">
                 <button type="button" class="btn-close justify-content-start color-" data-bs-dismiss="offcanvas" aria-label="Close"></button> <!--Style it, add animation-->
               </div>
               <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe -5">
+                <ul class="navbar-nav flex-grow-1 pe -5 ">
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="index.html">Home</a>
+                    <a class="nav-link non-dropdown" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                    <a class="nav-link non-dropdown" href="../contact.html">Contact</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white" href="about.html">About</a>
+                    <a class="nav-link non-dropdown" href="../about.html">About</a>
                   </li>
                   <li class="nav-item">
                     <div class="dropdown">
                       <button class="btn-secondary">
-                        MENU <i class="fa-solid fa-caret-down"></i>
+                        MENU 
                       </button>
                       <div class="content">
-                        <a href="/veg-appz.html">Appetizers (Veg.)</a>
-                        <a href="/nonveg-appz.html">Appetizers (Non Veg.)</a>
-                        <a href="">Soups & Salads</a>
-                        <a href="">Tandoor Specialties</a>
-                        <a href="">Veg Specialties</a>
-                        <a href="">Chicken Specialties</a>
-                        <a href="">Lamb & Goat Specialties</a>
-                        <a href="">Seafood Specialties</a>
+                        <a href="/menu-items/veg-appz.html">Appetizers (Veg.)</a>
+                        <a href="/menu-items/nonveg-appz.html">Appetizers (Non Veg.)</a>
+                        <a href="/menu-items/soups-salads.html">Soups & Salads</a>
+                        <a href="/menu-items/tandoor-specialties.html">Tandoor Specialties</a>
+                        <a href="/menu-items/veg-specialties.html">Veg Specialties</a>
+                        <a href="/menu-items/chicken-specialties.html">Chicken Specialties</a>
+                        <a href="/menu-items/lamb-goat-specialites.html">Lamb & Goat Specialties</a>
+                        <a href="/menu-items/seafood-specialties.html">Seafood Specialties</a>
                       </div>
                     </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-item-order"  href="https://order.tbdine.com/pickup/50672" target="_blank" rel="noopener noreferrer">Online Order</a>
                   </li>
                 </ul>
               </div>
@@ -80,21 +83,16 @@
     </header>
 
           <main class="contact"> <!--Make the form pretty and work-->
-            <h1>Contact Us</h1>
-            <form class="contact-form">
-              <div class="contact-form-row-1 d-flex flex-row">
-                <input class="contact-form-cell" type="text" placeholder="First Name" autocomplete="off">
-                <input class="contact-form-cell" type="text" placeholder="Last Name" autocomplete="off">
-              </div>
-              <div class="contact-form-row-2 d-flex flex-row">
-                <input class="contact-form-cell" type="text" placeholder="Phone no." autocomplete="off">
-                <input class="contact-form-cell" type="text" placeholder="Email" autocomplete="off">
-              </div>
-              <div class="contact-form-row-3 d-flex flex-row">
-                <input class="contact-form-cell" type="text" placeholder="Message" autocomplete="off">
-              </div>
-              <button>Submit</button>
-            </form>
+            <div class="contact-container">
+              <form action="https://formsubmit.co/cc32035486db3662091e485b490ab681 " method="POST">
+                <h3>GET IN TOUCH</h3>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Email ID" required>
+                <input type="tel" name="phone" placeholder="Phone No." required>
+                <textarea name="message" rows="4" placeholder="How can we help you?"></textarea>
+                <button type="submit">Send</button>
+              </form>
+            </div>
           </main>
 
           <footer class="d-flex flex-row">

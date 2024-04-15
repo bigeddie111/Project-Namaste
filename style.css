@@ -5,6 +5,7 @@
 3. Add breakpoints after site is done
 4. Images are only samples, change after getting the right ones (Using ones without copyright or CC License) Watch https://tinyurl.com/446ukujv & https://tinyurl.com/54td3r96 & https://tinyurl.com/pwaerwrv 
 5. Black & Yellow Color Theme
+6. Make everything small
 */
 
 body{
@@ -38,7 +39,7 @@ body{
     content: "";
     width: 75px;
     height: 75px;
-    border: solid 15px black;
+    border: solid 15px rgb(0, 0, 0);
     border-top: solid 15px #FFD700;
     border-radius: 50%;
     animation: loading 0.75s linear infinite;
@@ -60,6 +61,22 @@ body{
     width: 100%;
 }
 
+.navbar-brand{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+#offcanvasNavbar ul li .nav-item-order{
+    color: white;
+    border: solid 2px white;
+}
+
+#offcanvasNavbar ul li .nav-item-order:hover{
+    color: rgb(0, 0, 0);
+    border: solid 2px white;
+    background-color: white;
+    transition: all .50s;
+}
 
 #offcanvasNavbar ul li{
     font-family: "Poppins";
@@ -67,6 +84,15 @@ body{
     text-transform: uppercase;
     font-size: 36px;
     margin-right: 40px;
+}
+
+#offcanvasNavbar ul li .non-dropdown{
+    color: white;
+    transition: color .50s;
+}
+
+#offcanvasNavbar ul li .non-dropdown:hover{
+    color: rgb(202, 202, 202);
 }
 
 .dropdown:hover .fa-caret-down {
@@ -92,30 +118,31 @@ body{
     border: none;
     color: white;
     font-weight: bolder;
-    padding: 10px 15px;
+    padding: 9px 15px;
+    transition: color .40s;
 }
 
 .dropdown a{
     display: block;
     color: black;
     text-decoration: none;
-    padding: 10px 15px;
+    margin-bottom: 2px;
 }
 
 .dropdown .content{
     display: none;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.5);
-    min-width: 100px;
     box-shadow: 2px 2px 5px black;
     font-size: 24px;
     font-weight: 300;
     z-index: 2;
+    white-space: nowrap; /* Ensures content stays in one line */
 }
 
-
+/*Change Complete Navbar to Style on right side of screen with DONATE as ONLINE ORDER*/
 .dropdown:hover button{
-    background-color: rgba(0, 0, 0, 0.719);
+    color: rgb(202, 202, 202);
 }
 
 .dropdown:hover .content{
@@ -212,7 +239,8 @@ ion-icon[name="chevron-down-outline"] {
     margin-left: 0;
     width: 50%;
     font-size: 30px;
-    font-family: "Futura LT";
+    font-family: "Poppins";
+    color: white;
     font-weight: 400;
     margin-top: 2em;
     
@@ -240,7 +268,7 @@ ion-icon[name="chevron-down-outline"] {
 }
 
 .home-features-content-2{
-    background-color: #FF6B00;
+    background-color: #ffa500;
     width: 50%;
 }
 
@@ -268,43 +296,53 @@ ion-icon[name="chevron-down-outline"] {
 
 /* Contact Form */
 
-.contact h1{
-    font-family: "Della Respira";
-    font-size: 56px;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 3em;
+.contact-container{ 
+    width: 100%;
+    height: 100vh;
+    background-color: #2d1ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.contact-form{
-    background-color: #F9F9F9;
+form{
+    background: white;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin: auto 9em;
-    margin-bottom: 5em;
-    border: solid black 1.5px;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
     border-radius: 10px;
 }
 
-.contact-form input{
-    margin: auto;
-    margin-top: 3em;
-    font-size: 26px;
-    font-family: "Playfair Display";
+form h3{
+    color: #555;
+    font-weight: 800;
+    margin-bottom: 20px;   
 }
 
-.contact-form-row-3 input::placeholder {
-    text-align: center;
-    margin-top: -100%; 
-    
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+} 
+
+form button{
+    padding: 15px;
+    background: #ff5361;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
 }
 
-.contact-form-row-3 input {
-    width: 30em;
-    height: 10em;
-    margin-bottom: 4em;
-}
 
 
 /* About */
@@ -379,9 +417,9 @@ ion-icon[name="chevron-down-outline"] {
 
 #about-main-last p{
     text-align: center;
-    margin: 100px 30px;
-    font-family: "Satisfy";
-    font-size: 40px;
+    margin: 90px 30px;
+    font-family: "Poppins";
+    font-size: 35px;
 }
 
 /* Menu */
@@ -551,7 +589,7 @@ footer{
 .footer-content-2{
     width: 45%;
     height: 40em;
-    background-color: #F9753C;
+    background-color: #fed42d;
 }
 
 .footer-content-2 h1{
@@ -577,7 +615,7 @@ footer{
 /* Buttons */
 
 .button-orng-1{
-    background-color: #FF6B00;
+    background-color: #fed42d;
     color: white;
     border: none;
     border-radius: 100px;
@@ -587,7 +625,7 @@ footer{
 
 .button-orng-2{
     background-color: white;
-    color: #FF6B00;
+    color: #fed42d;
     border: none;
     border-radius: 100px;
     font-family: "Poppins";

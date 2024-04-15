@@ -14,3 +14,6 @@ window.addEventListener("load", () => {
         document.body.removeChild(loader);
     })
 })
+
+//Contact Form
+
