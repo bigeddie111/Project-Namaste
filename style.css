@@ -517,18 +517,22 @@ form button{
 footer{
     margin-top: 8em;
     margin-bottom: 70px;
+    background-color: #212529;
 }
 
 .footer-content-1 h2 {
-    font-family: "Della Respira";
+    font-family: "Futura LT";
+    font-weight: 400;
     font-size: 35px;
     margin-bottom: 30px;
     text-align: center;
+    color: white;
 }
 
 .footer-content-1 p {
     font-family: "Poppins";
     font-size: 20px;
+    color: white;
 }
 
 .footer-content-1-sup-content-1{
@@ -589,7 +593,7 @@ footer{
 .footer-content-2{
     width: 45%;
     height: 40em;
-    background-color: #fed42d;
+    background-color: #ffa500;
 }
 
 .footer-content-2 h1{
@@ -615,7 +619,7 @@ footer{
 /* Buttons */
 
 .button-orng-1{
-    background-color: #fed42d;
+    background-color: #ffa500;
     color: white;
     border: none;
     border-radius: 100px;
@@ -625,7 +629,7 @@ footer{
 
 .button-orng-2{
     background-color: white;
-    color: #fed42d;
+    color: #ffa500;
     border: none;
     border-radius: 100px;
     font-family: "Poppins";
