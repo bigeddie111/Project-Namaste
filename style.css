@@ -280,11 +280,9 @@ ion-icon[name="chevron-down-outline"] {
     color: white;
 }
 
-.home-features-content-1 button {
+.home-features-content-1 a {
     font-size: 2.5em;
-    width: 50%;
-    margin: auto;
-    margin-top: 70px;
+    margin: 70px auto;
 }
 
 .home-features-content-2 img{
