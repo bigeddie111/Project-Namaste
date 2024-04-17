@@ -56,6 +56,19 @@ body{
 }
 
 /* Navigation */
+.navbar-scrolled {
+    height: 9em;
+    background-color: rgba(33, 37, 41, 0.925);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    transition: all 0.5s;
+}
+
+.nav-child-1 {
+    height: 15rem;
+}
 
 .index-img{
     width: 100%;
@@ -93,22 +106,6 @@ body{
 
 #offcanvasNavbar ul li .non-dropdown:hover{
     color: rgb(202, 202, 202);
-}
-
-.dropdown:hover .fa-caret-down {
-    animation: dropdown-arrow .5s ease-out 1 forwards;
-   
-}
-
-@keyframes dropdown-arrow {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100%{
-        transform: rotate(180deg);
-    }
-
 }
 
 
@@ -153,10 +150,10 @@ body{
     background-color: rgba(255, 255, 255, 0.719);
 }
 
-header .index-nav{
+.index-nav{
     background-image: url(./images/l-intro-1645057933.jpg);
     background-size: cover;
-    height: 60rem;
+    height: 55rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -164,10 +161,10 @@ header .index-nav{
     flex-direction: column;
 }
 
-header .contact-nav {
+.contact-nav {
     background-image: url(./images/GettyImages-12925636271-ezgif.com-crop.jpg);
     background-size: cover;
-    height: 60rem;
+    height: 55rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -175,10 +172,10 @@ header .contact-nav {
     flex-direction: column;
 }
 
-header .about-nav {
+.about-nav {
     background-image: url(./images/istock-478831658-ezgif.com-webp-to-jpg-converter.jpg);
     background-size: cover;
-    height: 60rem;
+    height: 55rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -186,7 +183,7 @@ header .about-nav {
     flex-direction: column;
 }
 
-header .menu-nav{
+.menu-nav{
     background-image: url(./images/Chicken_Grilled_Blog_2-ezgif.com-crop.jpg);
     background-size: cover;
     height: 30rem;
@@ -205,6 +202,7 @@ header .menu-nav{
 .down-arrow{
     display: flex;
     flex-direction: column;
+    margin-top: auto;
 }
 
 ion-icon[name="chevron-down-outline"] {
@@ -216,10 +214,35 @@ ion-icon[name="chevron-down-outline"] {
 
 .down-arrow ion-icon[name="chevron-down-outline"]:nth-child(1){
     margin-bottom: -30px;
+    animation: bounce 0.5s infinite alternate;
+    transition: transform 0.3s ease;
 }
 
+
 .down-arrow ion-icon[name="chevron-down-outline"]:nth-child(2){
-    margin-bottom: -10px;
+    margin-bottom: 20px;
+    animation: bounce2 0.5s infinite alternate;
+    transition: transform 0.3s ease;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes bounce2 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(30px);
+    }
 }
 
 /* Home Main Content  */
@@ -227,6 +250,7 @@ ion-icon[name="chevron-down-outline"] {
 #home-main-content{
     padding: 70px;
     justify-content: center;
+
 }
 
 .home-main-content-img img{
@@ -285,11 +309,10 @@ ion-icon[name="chevron-down-outline"] {
     margin: 70px auto;
 }
 
-.home-features-content-2 img{
-    width: 10%;
-    height: 130px;
-    filter: drop-shadow(5px 5px 1px #141414);
-    margin-right: 20px ;
+.home-features-content-2 i {
+    font-size: 3vw;
+    margin: .5vw;
+    color: #212529;
 }
 
 /* Contact Form */
@@ -514,7 +537,6 @@ form button{
 
 footer{
     margin-top: 8em;
-    margin-bottom: 70px;
     background-color: #212529;
 }
 
@@ -589,13 +611,14 @@ footer{
 
 
 .footer-content-2{
+    margin: auto;
     width: 45%;
     height: 40em;
     background-color: #ffa500;
 }
 
 .footer-content-2 h1{
-    margin-top: 20%;
+    margin-top: 150px;
     font-size: 70px;
     font-family: "Della Respira";
     color: white;
