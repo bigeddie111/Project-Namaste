@@ -79,9 +79,12 @@ body{
     margin-left: 50px;
 }
 
+/* Make font-size responsive when not offcanvas */
 #offcanvasNavbar ul li .nav-item-order{
     color: white;
     border: solid 2px white;
+    font-size: 2vw;
+    width: 8em;
 }
 
 #offcanvasNavbar ul li .nav-item-order:hover{
@@ -99,9 +102,11 @@ body{
     margin-right: 40px;
 }
 
+/* Make font-size responsive when not offcanvas */
 #offcanvasNavbar ul li .non-dropdown{
     color: white;
     transition: color .50s;
+    font-size: 2vw;
 }
 
 #offcanvasNavbar ul li .non-dropdown:hover{
@@ -109,7 +114,7 @@ body{
 }
 
 
-
+/* Make font-size responsive when not offcanvas */
 .dropdown button{
     background-color: transparent;
     border: none;
@@ -117,6 +122,7 @@ body{
     font-weight: bolder;
     padding: 9px 15px;
     transition: color .40s;
+    font-size: 2vw;
 }
 
 .dropdown a{
@@ -124,12 +130,14 @@ body{
     color: black;
     text-decoration: none;
     margin-bottom: 2px;
+    text-align: center;
+    transition: all ease .5s;
 }
 
 .dropdown .content{
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 5px black;
     font-size: 24px;
     font-weight: 300;
@@ -137,17 +145,27 @@ body{
     white-space: nowrap; /* Ensures content stays in one line */
 }
 
-/*Change Complete Navbar to Style on right side of screen with DONATE as ONLINE ORDER*/
+
 .dropdown:hover button{
     color: rgb(202, 202, 202);
 }
 
 .dropdown:hover .content{
     display: block; 
+    animation: dropdownSlideIn .75s ease forwards;
 }
 
+
+@keyframes dropdownSlideIn {
+    from {transform: translateX(100px);}
+    to {transform: translateX(-50px);}
+}
+
+
+
 .content a:hover {
-    background-color: rgba(255, 255, 255, 0.719);
+    background-color: black;
+    color: white;
 }
 
 .index-nav{
