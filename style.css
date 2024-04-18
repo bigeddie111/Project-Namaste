@@ -74,16 +74,15 @@ body{
     width: 100%;
 }
 
-.navbar-brand{
-    margin-top: 20px;
-    margin-left: 50px;
+.navbar-brand img{
+    margin-top: 30px;
 }
 
 /* Make font-size responsive when not offcanvas */
 #offcanvasNavbar ul li .nav-item-order{
     color: white;
     border: solid 2px white;
-    font-size: 2vw;
+    font-size: 2rem;
     width: 8em;
 }
 
@@ -95,8 +94,8 @@ body{
 }
 
 #offcanvasNavbar ul li{
-    font-family: "Poppins";
-    font-weight: bolder;
+    font-family: "Futura LT";
+    font-weight: 400;
     text-transform: uppercase;
     font-size: 36px;
     margin-right: 40px;
@@ -106,7 +105,7 @@ body{
 #offcanvasNavbar ul li .non-dropdown{
     color: white;
     transition: color .50s;
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 #offcanvasNavbar ul li .non-dropdown:hover{
@@ -115,17 +114,19 @@ body{
 
 
 /* Make font-size responsive when not offcanvas */
-.dropdown button{
+.dropdown .dropdown-title{
     background-color: transparent;
     border: none;
     color: white;
-    font-weight: bolder;
-    padding: 9px 15px;
+    font-weight: 400;
     transition: color .40s;
-    font-size: 2vw;
+    font-size: 2rem;
+    text-decoration: none;
 }
 
-.dropdown a{
+
+
+.dropdown .content a{
     display: block;
     color: black;
     text-decoration: none;
@@ -140,13 +141,13 @@ body{
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 5px black;
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 400;
     z-index: 2;
     white-space: nowrap; /* Ensures content stays in one line */
 }
 
 
-.dropdown:hover button{
+.dropdown:hover .dropdown-title{
     color: rgb(202, 202, 202);
 }
 
