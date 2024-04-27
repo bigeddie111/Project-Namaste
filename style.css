@@ -37,10 +37,10 @@ body{
 
 .loader::after{
     content: "";
-    width: 75px;
-    height: 75px;
-    border: solid 15px rgb(0, 0, 0);
-    border-top: solid 15px #FFD700;
+    width: 50px;
+    height: 50px;
+    border: solid 7px rgb(0, 0, 0);
+    border-top: solid 7px #FFD700;
     border-radius: 50%;
     animation: loading 0.75s linear infinite;
 }
@@ -57,8 +57,8 @@ body{
 
 /* Navigation */
 .navbar-scrolled {
-    height: 9em;
-    background-color: rgba(33, 37, 41, 0.925);
+    height: 6em;
+    background-color: rgba(255, 165, 0, 0.925);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -67,7 +67,7 @@ body{
 }
 
 .nav-child-1 {
-    height: 15rem;
+    height: 4rem;
 }
 
 .index-img{
@@ -75,15 +75,17 @@ body{
 }
 
 .navbar-brand img{
-    margin-top: 30px;
+    margin-left: 90px;
+    margin-top: 90px;
 }
 
 /* Make font-size responsive when not offcanvas */
 #offcanvasNavbar ul li .nav-item-order{
-    color: white;
+    color: black;
     border: solid 2px white;
-    font-size: 2rem;
-    width: 8em;
+    font-size: 20px;
+    width: 9em;
+    margin-left: 8em;
 }
 
 #offcanvasNavbar ul li .nav-item-order:hover{
@@ -97,7 +99,6 @@ body{
     font-family: "Futura LT";
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 36px;
     margin-right: 40px;
 }
 
@@ -105,7 +106,7 @@ body{
 #offcanvasNavbar ul li .non-dropdown{
     color: white;
     transition: color .50s;
-    font-size: 2rem;
+    font-size: 20px;
 }
 
 #offcanvasNavbar ul li .non-dropdown:hover{
@@ -120,7 +121,7 @@ body{
     color: white;
     font-weight: 400;
     transition: color .40s;
-    font-size: 2rem;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -140,7 +141,7 @@ body{
     position: absolute;
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 5px black;
-    font-size: 24px;
+    font-size: 15px;
     font-weight: 400;
     z-index: 2;
     white-space: nowrap; /* Ensures content stays in one line */
@@ -332,6 +333,31 @@ ion-icon[name="chevron-down-outline"] {
     font-size: 3vw;
     margin: .5vw;
     color: #212529;
+}
+
+.feedback{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    color: white;
+}
+
+.feedback h4{
+    font-family:"Futura LT" ;
+    font-weight: 400;
+    margin: auto;
+}
+
+.feedback p{
+    font-family:"Futura LT" ;
+    font-weight: 400;
+    width: 50em;
+    margin: 2em auto;
+}
+
+.feedback-stars i{
+    font-size: 3em;
+    color:  white;
 }
 
 /* Contact Form */

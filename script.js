@@ -18,18 +18,33 @@ window.addEventListener("load", () => {
 //Sticky NavBar
 const navEl = document.querySelector(".navbar");
 const navImg = document.querySelector(".navbar-img");
+const navTextNormal = document.querySelectorAll("#offcanvasNavbar ul li .non-dropdown")
+const navOrder = document.querySelector("#offcanvasNavbar ul li .nav-item-order")
+const navDropdown = document.querySelector(".dropdown .dropdown-title");
 
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 250) {
         navEl.classList.add('fixed-top')
         navEl.classList.add('navbar-scrolled');
-        navImg.style.width = "30%";
-        navImg.style.marginBottom = ".80em";
+        navImg.style.width = "17%";
+        navImg.style.marginBottom = "4em";
+        navTextNormal.forEach(element => {
+            element.style.color = "black";
+        })
+        navOrder.style.color = "black";
+        navOrder.style.border = "solid 1px black";
+        navDropdown.style.color = "black";
 
     } else {
         navEl.classList.remove('fixed-top')
         navEl.classList.remove('navbar-scrolled');
-        navImg.style.width = "50%";
-        navImg.style.marginBottom = "0";
+        navImg.style.width = "30%";
+        navImg.style.marginBottom = "0";        
+        navTextNormal.forEach(element => {
+            element.style.color = "white";
+        })
+        navOrder.style.color = "white";
+        navOrder.style.border = "solid 1px white";
+        navDropdown.style.color = "white";
     }
 })
