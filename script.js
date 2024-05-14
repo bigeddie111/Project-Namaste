@@ -26,14 +26,15 @@ window.addEventListener('scroll', () => {
     if (window.scrollY >= 250) {
         navEl.classList.add('fixed-top')
         navEl.classList.add('navbar-scrolled');
-        navImg.style.width = "17%";
-        navImg.style.marginBottom = "4em";
+        navImg.style.width = "14%";
+        navImg.style.marginBottom = "5em";
         navTextNormal.forEach(element => {
             element.style.color = "black";
         })
         navOrder.style.color = "black";
         navOrder.style.border = "solid 1px black";
         navDropdown.style.color = "black";
+
 
     } else {
         navEl.classList.remove('fixed-top')
@@ -48,3 +49,7 @@ window.addEventListener('scroll', () => {
         navDropdown.style.color = "white";
     }
 })
+
+function changeToBlack(element) {
+    element.style.color = "black";
+}
