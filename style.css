@@ -10,6 +10,7 @@
 
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 
 *{
@@ -39,8 +40,8 @@ body{
 
 .loader::after{
     content: "";
-    width: 50px;
-    height: 50px;
+    width: 5vw;
+    height: 5vw;
     border: solid 7px rgb(0, 0, 0);
     border-top: solid 7px #FFD700;
     border-radius: 50%;
@@ -65,6 +66,7 @@ body{
 }
 
 .navbar {
+    margin-top: 3em;
     transition: all 0.5s;
 }
 
@@ -76,12 +78,13 @@ body{
     width: 100%;
 }
 
+.navbar-brand{
+    width: 50%;
+}
 .navbar-brand img{
     margin-left: 90px;
-    margin-top: 100px;
 }
 
-/* Make font-size responsive when not offcanvas */
 #offcanvasNavbar ul li .nav-item-order{
     color: white;
     border: solid 2px white;
@@ -104,7 +107,7 @@ body{
     margin-right: 40px;
 }
 
-/* Make font-size responsive when not offcanvas */
+
 #offcanvasNavbar ul li .non-dropdown{
     color: white;
     transition: color .50s;
@@ -116,7 +119,6 @@ body{
 }
 
 
-/* Make font-size responsive when not offcanvas */
 .dropdown .dropdown-title{
     background-color: transparent;
     border: none;
@@ -152,6 +154,7 @@ body{
 
 .dropdown:hover .dropdown-title{
     color: rgb(202, 202, 202);
+    cursor: pointer;
 }
 
 .dropdown:hover .content{
@@ -216,8 +219,12 @@ body{
     flex-direction: column;
 }
 
+.navbar-toggler{
+    margin-left: 20%;
+}
+
 .navbar-toggler img {
-    width: 80px;
+    width: 50px;
 }
 
 
@@ -229,7 +236,7 @@ body{
 
 ion-icon[name="chevron-down-outline"] {
     color: white;
-    font-size: 70px;
+    font-size: 50px;
     transition: .5s linear;
 }
 
@@ -266,6 +273,7 @@ ion-icon[name="chevron-down-outline"] {
         transform: translateY(30px);
     }
 }
+
 
 /* Home Main Content  */
 
@@ -353,12 +361,11 @@ ion-icon[name="chevron-down-outline"] {
 .feedback p{
     font-family:"Futura LT" ;
     font-weight: 400;
-    width: 50em;
     margin: 2em auto;
 }
 
 .feedback-stars i{
-    font-size: 3em;
+    font-size: 2vw;
     color:  white;
 }
 
@@ -666,14 +673,14 @@ footer{
 
 .footer-content-2 h1{
     margin-top: 150px;
-    font-size: 70px;
+    font-size: 30px;
     font-family: "Della Respira";
     color: white;
 }
 
 .footer-content-2 button{
     margin-top: 30px;
-    font-size: 50px;
+    font-size: 20px;
     padding: 0 20px;
 }
 
@@ -703,4 +710,6 @@ footer{
     font-family: "Poppins";
     font-weight: normal;
 }
+
+
 
