@@ -83,7 +83,7 @@ body{
 }
 
 .navbar-brand img{
-    width: 9vw;
+    width: 7vw;
     margin-left: 90px;
 }
 
@@ -180,7 +180,7 @@ body{
 .index-nav{
     background-image: url(./images/l-intro-1645057933.jpg);
     background-size: cover;
-    height: 50em;
+    height: 55em;
     width: 100%;
     display: flex;
     align-items: center;
@@ -283,6 +283,9 @@ ion-icon[name="chevron-down-outline"] {
 #home-main-content{
     padding: 70px;
     justify-content: center;
+    background: #212529;
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -293,7 +296,6 @@ ion-icon[name="chevron-down-outline"] {
 }
 
 .home-main-content-text{
-    margin-left: 0;
     width: 50%;
     font-size: 1vw;
     font-family: "Futura LT";
@@ -715,10 +717,21 @@ footer{
 }
 
 /* Media Query */
+@media screen and (max-width: 1024px) {
+    .home-main-content-text {
+        font-size: 1.5vw;
+    }
+    
+}
+
 @media screen and (max-width: 991px) {
+    #offcanvasNavbar ul li .non-dropdown, #offcanvasNavbar ul li .nav-item-order, .dropdown .dropdown-title {
+        font-size: 15px;
+    }
+
     .navbar-brand img{
-        width: 20vw;
-        margin-left: auto;
+        width: 5em;
+        margin-left: 2em;
     }
 
     #offcanvasNavbar ul li .nav-item-order {
@@ -726,6 +739,72 @@ footer{
         padding-left: 6px;   
     }
 
+    .index-nav, .about-nav, .contact-nav {
+        height: 40em;
+    }
+
+    .home-main-content-text {
+        font-size: 2vw;
+    }
+
+    .home-main-content-img {
+        margin-top: auto;
+        margin-bottom: auto;
+
+    }
+    
+    .home-main-content-img img {
+        width: 30vw;
+    }
+}
+
+    
+
+@media screen and (max-width: 430px) {
+    .navbar-brand img {
+        width: 3em;
+    }
+
+    .index-nav, .about-nav, .contact-nav {
+        height: 25em;
+    }
+
+    #home-main-content {
+        flex-direction: column;
+        height: 30em;
+    }
+
+    .home-main-content-img {
+        display: flex
+    }
+
+    .home-main-content-img img {
+        width: 110px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-main-content-text {
+        width: 100%;
+        font-size: .65em;
+        
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-main-content-text p{
+        text-align: center;
+        
+    }
+
+    ion-icon[name="chevron-down-outline"] {
+        font-size: 40px;
+    }
+
+    .down-arrow ion-icon[name="chevron-down-outline"]:nth-child(2){
+        margin-bottom: 1em;
+    }
 
 
 }

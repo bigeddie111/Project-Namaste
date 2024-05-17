@@ -101,7 +101,6 @@ window.addEventListener('scroll', () => {
 
         
     // Media Query When Nav Shrinks and comes back up from scroll
-    } else if (window.innerWidth < 992) {
-        navImg.style.width = "20vw";
-    }
+    } 
+    
 })
