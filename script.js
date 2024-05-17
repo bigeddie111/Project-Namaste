@@ -25,12 +25,11 @@ const navDropdown = document.querySelector(".dropdown .dropdown-title");
 
     
 window.addEventListener('scroll', () => {
-    if (window.scrollY >= 250 && window.innerWidth >= 1000) {
+    if (window.scrollY >= 250 && window.innerWidth >= 992) {
         navEl.style.marginTop = "0em";
         navEl.classList.add('fixed-top')
         navEl.classList.add('navbar-scrolled');
-        navImg.style.width = "17%";
-        navImg.style.marginBottom = "1em";
+        navImg.style.width = "5vw";
         navTextNormal.forEach(element => {
             element.style.color = "black";
             element.addEventListener("mouseenter", () => {
@@ -63,11 +62,11 @@ window.addEventListener('scroll', () => {
         })
 
 
-    } else {
+    } else if (window.innerWidth >= 992) {
         navEl.style.marginTop = "4em";
         navEl.classList.remove('fixed-top')
         navEl.classList.remove('navbar-scrolled');
-        navImg.style.width = "30%";
+        navImg.style.width = "9vw";
         navImg.style.marginBottom = "0";        
         navTextNormal.forEach(element => {
             element.style.color = "white";
@@ -101,6 +100,8 @@ window.addEventListener('scroll', () => {
         })
 
         
+    // Media Query When Nav Shrinks and comes back up from scroll
+    } else if (window.innerWidth < 992) {
+        navImg.style.width = "20vw";
     }
 })
-

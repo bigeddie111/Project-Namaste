@@ -81,7 +81,9 @@ body{
 .navbar-brand{
     width: 50%;
 }
+
 .navbar-brand img{
+    width: 9vw;
     margin-left: 90px;
 }
 
@@ -90,7 +92,7 @@ body{
     border: solid 2px white;
     font-size: 20px;
     width: 9em;
-    margin-left: 8em;
+    margin-left: 3.2em;
     transition: all .50s;
 }
 
@@ -178,7 +180,7 @@ body{
 .index-nav{
     background-image: url(./images/l-intro-1645057933.jpg);
     background-size: cover;
-    height: 45vw;
+    height: 50em;
     width: 100%;
     display: flex;
     align-items: center;
@@ -189,7 +191,7 @@ body{
 .contact-nav {
     background-image: url(./images/GettyImages-12925636271-ezgif.com-crop.jpg);
     background-size: cover;
-    height: 55rem;
+    height: 50em;
     width: 100%;
     display: flex;
     align-items: center;
@@ -200,7 +202,7 @@ body{
 .about-nav {
     background-image: url(./images/istock-478831658-ezgif.com-webp-to-jpg-converter.jpg);
     background-size: cover;
-    height: 55rem;
+    height: 50em;
     width: 100%;
     display: flex;
     align-items: center;
@@ -245,11 +247,12 @@ ion-icon[name="chevron-down-outline"] {
     margin-bottom: -30px;
     animation: bounce 0.5s infinite alternate;
     transition: transform 0.3s ease;
+    
 }
 
 
 .down-arrow ion-icon[name="chevron-down-outline"]:nth-child(2){
-    margin-bottom: 20px;
+    margin-bottom: 4vw;
     animation: bounce2 0.5s infinite alternate;
     transition: transform 0.3s ease;
 }
@@ -711,5 +714,18 @@ footer{
     font-weight: normal;
 }
 
+/* Media Query */
+@media screen and (max-width: 991px) {
+    .navbar-brand img{
+        width: 20vw;
+        margin-left: auto;
+    }
+
+    #offcanvasNavbar ul li .nav-item-order {
+        margin-left: -10px;
+        padding-left: 6px;   
+    }
 
 
+
+}
