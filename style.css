@@ -225,8 +225,9 @@ body{
     margin-left: 20%;
 }
 
-.navbar-toggler img {
-    width: 50px;
+ion-icon[name= "menu"] {
+    font-size: 2em;
+    color: black;
 }
 
 
@@ -308,11 +309,14 @@ ion-icon[name="chevron-down-outline"] {
 /* Home Features Content */
 
 #home-features{
+    display: flex;
+    flex-direction: row;
     margin-bottom: 40px;
 }
 
 .home-features-content-1{
    background-image: url(./images/slowcookerchickentikkamasala.jpeg);
+   background-position: center;
    background-size: cover;
    width: 50%;
    height: 500px;
@@ -321,7 +325,7 @@ ion-icon[name="chevron-down-outline"] {
 .home-features-content-1 h1{
     text-align: center;
     margin-top: 2em;
-    font-size: 55px;
+    font-size: 3vw;
     font-family: "Della Respira";
     color: white;
 }
@@ -340,7 +344,7 @@ ion-icon[name="chevron-down-outline"] {
 }
 
 .home-features-content-1 a {
-    font-size: 2.5em;
+    font-size: 2vw;
     margin: 70px auto;
 }
 
@@ -373,6 +377,8 @@ ion-icon[name="chevron-down-outline"] {
     font-size: 2vw;
     color:  white;
 }
+
+
 
 /* Contact Form */
 
@@ -615,31 +621,38 @@ footer{
 }
 
 .footer-content-1-sup-content-1{
-    margin-top: 12%;
-    margin-bottom: 6em;
+
 }
 
 
 .footer-content-1-sup-content-1 div:nth-child(1) ul {
     padding: 0;
     margin: 0;
+    width: 100%;
     display: flex;
+    justify-content: center ;
+    align-items: center;
 }
 
 .footer-content-1-sup-content-1 div:nth-child(1) ul li .fa-brands {
     color: #000000;
-    font-size: 25px;
+    font-size: 4vw;
     line-height: 50px;
     transition: .5s;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .footer-content-1-sup-content-1 div:nth-child(1) ul li .fa-brands:hover {
     color: #ffffff;
 }
 .footer-content-1-sup-content-1 div:nth-child(1) ul li a {
     position: relative;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50%;
     background-color: white;
     text-align: center;
@@ -663,14 +676,13 @@ footer{
 
 .footer-content-1-sup-content-1 div:nth-child(1) ul li .fa-brands {
     color: #000000;
-    font-size: 25px;
+    font-size: 1.5vw;
     line-height: 50px;
     transition: .5s;
 }
 
 
 .footer-content-2{
-    margin: auto;
     width: 45%;
     height: 40em;
     background-color: #ffa500;
@@ -704,7 +716,16 @@ footer{
     border: none;
     border-radius: 100px;
     font-family: "Poppins";
+    font-size: 1.3vw;
+    padding: 10px;
     font-weight: normal;
+    transition: all .5s ease;
+}
+
+.button-orng-1:hover {
+    background-color: white;
+    color: #ffa500;
+
 }
 
 .button-orng-2{
@@ -714,8 +735,13 @@ footer{
     border-radius: 100px;
     font-family: "Poppins";
     font-weight: normal;
+    transition: all .5s ease;
 }
 
+.button-orng-2:hover {
+    background-color: #ffa500;
+    color: white;
+}
 /* Media Query */
 @media screen and (max-width: 1024px) {
     .home-main-content-text {
@@ -806,5 +832,40 @@ footer{
         margin-bottom: 1em;
     }
 
+    #home-features{
+        flex-direction: column;
+    }
 
+    .home-features-content-1, .home-features-content-2 {
+        height: 25em;
+        width: 100% ;
+    }
+
+    .home-features-content-1 h1 {
+        font-size: 5vw;
+    }
+    .button-orng-1 {
+        font-size: 3vw;
+    }
+
+}
+
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 2rem 0;
+}
+
+footer h6 {
+    color: #ff6600;
+}
+
+footer a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
