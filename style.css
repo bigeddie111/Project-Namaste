@@ -59,14 +59,15 @@ body{
 }
 
 /* Navigation */
+
 .navbar-scrolled {
-    height: 6em;
+    height: 4em;
     background-color: rgba(255, 165, 0, 0.925);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
-.navbar {
-    margin-top: 3em;
+nav {
+    margin-top: 4em;
     transition: all 0.5s;
 }
 
@@ -89,16 +90,14 @@ body{
 
 #offcanvasNavbar ul li .nav-item-order{
     color: white;
-    border: solid 2px white;
     font-size: 20px;
     width: 9em;
-    margin-left: 3.2em;
+    margin-left: 3.3em;
     transition: all .50s;
 }
 
 #offcanvasNavbar ul li .nav-item-order:hover{
     color: black;
-    border: solid 2px white;
     background-color: white;
 }
 
@@ -228,7 +227,9 @@ body{
 ion-icon[name= "menu"] {
     font-size: 2em;
     color: black;
+    text-decoration: none;
 }
+
 
 
 .down-arrow{
@@ -241,6 +242,7 @@ ion-icon[name="chevron-down-outline"] {
     color: white;
     font-size: 50px;
     transition: .5s linear;
+    text-decoration: none;
 }
 
 
@@ -620,10 +622,6 @@ footer{
     color: white;
 }
 
-.footer-content-1-sup-content-1{
-
-}
-
 
 .footer-content-1-sup-content-1 div:nth-child(1) ul {
     padding: 0;
@@ -664,9 +662,11 @@ footer{
 }
 .footer-content-1-sup-content-1 div:nth-child(1) ul li:nth-child(1) a:hover {
     background-color: #e4405f;
+    text-decoration: none;
 }
 .footer-content-1-sup-content-1 div:nth-child(1) ul li:nth-child(2) a:hover {
     background-color: #3b5999;
+    text-decoration: none;
 }
 
 .footer-content-1-sup-content-1 div:nth-child(1) ul li{
@@ -761,7 +761,7 @@ footer{
     }
 
     #offcanvasNavbar ul li .nav-item-order {
-        margin-left: -10px;
+        margin-left: -6px;
         padding-left: 6px;   
     }
 

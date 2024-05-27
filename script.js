@@ -22,7 +22,8 @@ const navOrder = document.querySelector("#offcanvasNavbar ul li .nav-item-order"
 const navDropdown = document.querySelector(".dropdown .dropdown-title");
 
 
-    
+
+
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 250 && window.innerWidth >= 992) {
         navEl.style.marginTop = "0em";
@@ -40,7 +41,6 @@ window.addEventListener('scroll', () => {
             })
         })
         navOrder.style.color = "black";
-        navOrder.style.border = "solid 1px black";
         navDropdown.style.color = "black";
 
         navDropdown.addEventListener("mouseenter", () => {
@@ -52,11 +52,11 @@ window.addEventListener('scroll', () => {
         })
 
         navOrder.addEventListener("mouseenter", () => {
-            navOrder.style.border = "1px solid white";
+            navOrder.style.backgroundColor = "transparent";
+            navOrder.style.color = "white";
         })
 
         navOrder.addEventListener("mouseleave", () => {
-            navOrder.style.border = "1px solid black";
             navOrder.style.color = "black";
         })
 
@@ -78,7 +78,6 @@ window.addEventListener('scroll', () => {
             })
         })
         navOrder.style.color = "white";
-        navOrder.style.border = "solid 1px white";
         navDropdown.style.color = "white";
         
         navDropdown.addEventListener("mouseenter", () => {
@@ -90,11 +89,12 @@ window.addEventListener('scroll', () => {
         })
         
         navOrder.addEventListener("mouseenter", () => {
+            navOrder.style.backgroundColor = "white";
             navOrder.style.color = "black";
         })
 
         navOrder.addEventListener("mouseleave", () => {
-            navOrder.style.border = "solid 1px white"
+            navOrder.style.backgroundColor = "white";
             navOrder.style.color = "white";
         })
 
