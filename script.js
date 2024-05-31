@@ -57,6 +57,7 @@ window.addEventListener('scroll', () => {
         })
 
         navOrder.addEventListener("mouseleave", () => {
+            navOrder.style.backgroundColor = "transparent";
             navOrder.style.color = "black";
         })
 
@@ -94,7 +95,7 @@ window.addEventListener('scroll', () => {
         })
 
         navOrder.addEventListener("mouseleave", () => {
-            navOrder.style.backgroundColor = "white";
+            navOrder.style.backgroundColor = "transparent";
             navOrder.style.color = "white";
         })
 
