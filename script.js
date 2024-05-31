@@ -29,7 +29,7 @@ window.addEventListener('scroll', () => {
         navEl.style.marginTop = "0em";
         navEl.classList.add('fixed-top')
         navEl.classList.add('navbar-scrolled');
-        navImg.style.width = "5vw";
+        navImg.style.width = "3.5vw";
         navTextNormal.forEach(element => {
             element.style.color = "black";
             element.addEventListener("mouseenter", () => {
@@ -99,7 +99,7 @@ window.addEventListener('scroll', () => {
         })
 
         
-    // Media Query When Nav Shrinks and comes back up from scroll
     } 
     
 })
+
