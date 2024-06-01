@@ -85,7 +85,7 @@ nav {
     color: white;
     font-size: 20px;
     width: 9em;
-    margin-left: 3.3em;
+    /* margin-left: 3.3em; */
     transition: all .50s;
 }
 
@@ -113,43 +113,7 @@ nav {
 }
 
 
-.dropdown .dropdown-title{
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-weight: 400;
-    transition: color .40s;
-    font-size: 20px;
-    text-decoration: none;
-}
 
-
-
-.dropdown .content a{
-    display: block;
-    color: black;
-    text-decoration: none;
-    margin-bottom: 2px;
-    text-align: center;
-    transition: all ease .5s;
-}
-
-.dropdown .content{
-    display: none;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 2px 5px black;
-    font-size: 15px;
-    font-weight: 400;
-    z-index: 2;
-    white-space: nowrap; /* Ensures content stays in one line */
-}
-
-
-.dropdown:hover .dropdown-title{
-    color: rgb(202, 202, 202);
-    cursor: pointer;
-}
 
 .dropdown:hover .content{
     display: block; 
@@ -313,7 +277,7 @@ ion-icon[name="chevron-down-outline"] {
    background-image: url(./images/slowcookerchickentikkamasala.jpeg);
    background-position: center;
    background-size: cover;
-   width: 50%;
+   width: 100%;
    height: 500px;
 }
 

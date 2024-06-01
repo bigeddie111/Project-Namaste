@@ -19,7 +19,6 @@ const navEl = document.querySelector(".navbar");
 const navImg = document.querySelector(".navbar-img");
 const navTextNormal = document.querySelectorAll("#offcanvasNavbar ul li .non-dropdown")
 const navOrder = document.querySelector("#offcanvasNavbar ul li .nav-item-order")
-const navDropdown = document.querySelector(".dropdown .dropdown-title");
 
 
 
@@ -41,15 +40,6 @@ window.addEventListener('scroll', () => {
             })
         })
         navOrder.style.color = "black";
-        navDropdown.style.color = "black";
-
-        navDropdown.addEventListener("mouseenter", () => {
-            navDropdown.style.color = "white"
-        })
-
-        navDropdown.addEventListener("mouseleave", () => {
-            navDropdown.style.color = "black"
-        })
 
         navOrder.addEventListener("mouseenter", () => {
             navOrder.style.backgroundColor = "transparent";
@@ -79,15 +69,6 @@ window.addEventListener('scroll', () => {
             })
         })
         navOrder.style.color = "white";
-        navDropdown.style.color = "white";
-        
-        navDropdown.addEventListener("mouseenter", () => {
-            navDropdown.style.color = "rgb(202, 202, 202)"
-        })
-
-        navDropdown.addEventListener("mouseleave", () => {
-            navDropdown.style.color = "white"
-        })
         
         navOrder.addEventListener("mouseenter", () => {
             navOrder.style.backgroundColor = "white";
@@ -102,5 +83,11 @@ window.addEventListener('scroll', () => {
         
     } 
     
+})
+
+const aboutView = document.querySelector("#about-view-our-menu");
+
+aboutView.addEventListener("click", () => {
+    window.open("https://order.tbdine.com/pickup/50672", "_blank");
 })
 
