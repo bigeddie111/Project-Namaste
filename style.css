@@ -785,7 +785,7 @@ footer{
 
 @media screen and (max-width: 430px) {
     .navbar-brand img {
-        width: 3em;
+        width: 4em;
     }
 
     .index-nav, .about-nav, .contact-nav {
