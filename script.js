@@ -39,6 +39,7 @@ window.addEventListener('scroll', () => {
                 element.style.color = "black";
             })
         })
+
         navOrder.style.color = "black";
 
         navOrder.addEventListener("mouseenter", () => {
@@ -50,6 +51,7 @@ window.addEventListener('scroll', () => {
             navOrder.style.backgroundColor = "transparent";
             navOrder.style.color = "black";
         })
+
 
 
     } else if (window.innerWidth >= 992) {

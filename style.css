@@ -169,13 +169,14 @@ nav {
 .menu-nav{
     background-image: url(./images/Chicken_Grilled_Blog_2-ezgif.com-crop.jpg);
     background-size: cover;
-    height: 30rem;
+    height: 50em;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
 }
+
 
 .navbar-toggler{
     margin-left: 20%;
@@ -589,6 +590,58 @@ form button{
     width: 90%;
 } 
 
+/* .onam-h1{
+    font-family: "Della Respira";
+    font-size: 50px; 
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+#home-onam{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.home-onam-container-1 img{
+    width: 80%;
+    margin-left: 5em;
+}
+
+.home-onam-container-2 img{
+    width: 90%;
+}
+
+.home-onam-container-3 img{
+    width: 80%;
+    margin-right: 10em;
+}
+
+#offcanvasNavbar ul li .onam {
+    font-size: 20px;
+}
+
+.onam-p{
+    font-size: 1vw;
+    font-family: "Futura LT";
+    color: black;
+    font-weight: 400;
+    margin: 2em 7em 0em;
+    text-align: center;
+}
+
+.carousel {
+    width: 80%; /* Adjust the width as needed 
+    max-width: 600px; /* Set a maximum width to prevent it from getting too large 
+    margin: 0 auto; /* Center the carousel horizontally 
+}
+
+.carousel-inner img {
+    width: 100%; /* Ensure images fill the carousel container 
+    height: auto; /* Maintain aspect ratio 
+}
+  
+
 /* Footer */
 
 footer{
@@ -754,7 +807,7 @@ footer{
         padding-left: 6px;   
     }
 
-    .index-nav, .about-nav, .contact-nav {
+    .index-nav, .about-nav, .contact-nav, .onam-nav {
         height: 40em;
     }
 
@@ -788,7 +841,7 @@ footer{
         width: 4em;
     }
 
-    .index-nav, .about-nav, .contact-nav {
+    .index-nav, .about-nav, .contact-nav, .onam-nav {
         height: 25em;
     }
 
