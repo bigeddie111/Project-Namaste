@@ -87,9 +87,24 @@ window.addEventListener('scroll', () => {
     
 })
 
+
+//Popup Functionality
+const openPopup = document.querySelector(".popup-open");
+const closePopup = document.querySelector(".popup-close");
+const popup = document.querySelector(".popup-christmas")
+
+    popup.style.opacity = "1";
+    popup.style.zIndex = "0";
+
+closePopup.addEventListener("click", () => {
+    popup.style.opacity = "0";
+    popup.style.zIndex = "-1";
+})
+
+
+
 const aboutView = document.querySelector("#about-view-our-menu");
 
 aboutView.addEventListener("click", () => {
     window.open("https://order.tbdine.com/pickup/50672", "_blank");
 })
-
