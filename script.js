@@ -109,6 +109,8 @@ window.addEventListener("load", function() {
             console.log("works");
             mainBody.style.display = "block" ;
             fireworks.style.display = "none" ;
+            newYearsh3.remove();
+            newYearsClose.remove();
         })
     }, 3500); // 5000 milliseconds = 5 seconds
 });

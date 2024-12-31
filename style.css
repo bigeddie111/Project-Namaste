@@ -171,7 +171,16 @@ body{
     text-decoration: none;
 }
 
+@media screen and (max-width:600px){
+    .fireworks h1 {
+        font-size: 2.25em;
+    }
 
+    .fireworksH3 {
+        font-size: 1.5em;
+        top: -20em;
+    }
+}
 
 /* Close Button (X) */
 .close-btn {
