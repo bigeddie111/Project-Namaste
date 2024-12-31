@@ -50,7 +50,7 @@ body{
 }
 
 /* Popup */
-.popup-close{
+/* .popup-close{
     background-image: linear-gradient(to right, #663399, #8853bd);
     border-radius: 20px;
     border: 0;
@@ -94,9 +94,114 @@ body{
     margin: 0;
 }
 
-.popup-inner p{
+.popup-menu{
+    display: block;
     line-height: 24px;
-    margin: 10px 0;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 17px;
+
+    background-color: white;
+    border: none;
+    transition: all .2s ease-out;
+}
+
+.popup-menu:hover{
+    background-color:  #0cb04a;
+    border-radius: 10px;
+} */
+
+ 
+.fireworks{
+    position: relative;
+    height: 100vh;
+    width: auto;
+    background-color: black;
+    z-index: 1;
+}
+
+.fireworks h1{
+    position: absolute;
+    top: -3em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Della Respira';
+    font-size: 50px;
+    z-index: 2;
+     
+}
+
+.fireworksH3 {
+    position: relative;
+    top: -13em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Della Respira';
+    font-size: 40px;
+    z-index: 2;
+    transition: color 1s ease-out;
+}
+
+.h3Hidden{
+    color: black;
+}
+
+.h3Hover:hover {
+    cursor: pointer;
+    color: #868686;
+}
+
+.popupBlockContent {
+    display: none;
+}
+
+.fireworksA {
+    margin: 0;
+    text-decoration: none;
+}
+
+
+
+/* Close Button (X) */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    transition: color 1s ease-out;
+}
+
+.buttonHidden {
+    color: black;
+    
+}
+
+
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+    .close-btn {
+        font-size: 20px;
+        top: 15px;
+        right: 15px;
+    }
 }
 
 /* Navigation */

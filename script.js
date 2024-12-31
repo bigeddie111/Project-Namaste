@@ -88,19 +88,30 @@ window.addEventListener('scroll', () => {
 })
 
 
-//Popup Functionality
-const openPopup = document.querySelector(".popup-open");
-const closePopup = document.querySelector(".popup-close");
-const popup = document.querySelector(".popup-christmas")
+//New Year's 
 
-    popup.style.opacity = "1";
-    popup.style.zIndex = "0";
+const fireworks = new Fireworks.default(fireWorksContainer);
+fireworks.start();
+window.addEventListener("load", function() {
+    // Function to execute after 5 seconds
+    setTimeout(function() {
+        // Your code here
+        const fireworks = document.querySelector(".fireworks");
+        const newYearsh3 = document.querySelector(".fireworksH3")
+        const newYearsClose = document.querySelector("#closeFireworks")
+        const mainBody = document.querySelector(".popupBlockContent");
 
-closePopup.addEventListener("click", () => {
-    popup.style.opacity = "0";
-    popup.style.zIndex = "-1";
-})
+        newYearsh3.classList.remove("h3Hidden");
+        newYearsh3.classList.add("h3Hover");
+        newYearsClose.classList.remove("buttonHidden");
 
+        newYearsClose.addEventListener("click", () => {
+            console.log("works");
+            mainBody.style.display = "block" ;
+            fireworks.style.display = "none" ;
+        })
+    }, 3500); // 5000 milliseconds = 5 seconds
+});
 
 
 const aboutView = document.querySelector("#about-view-our-menu");
