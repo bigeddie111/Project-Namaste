@@ -182,6 +182,25 @@ body{
     }
 }
 
+@media screen and (max-width: 425px) {
+    .fireworksH3 {
+        top: -20em;
+    }
+    
+    
+}
+
+@media screen and (max-width: 380px) {
+    .fireworks h1 {
+        font-size: 1.45em;
+    }
+
+    .fireworksH3 {
+        font-size: 1.25em;
+        top: -19em;
+    }
+    
+}
 /* Close Button (X) */
 .close-btn {
     position: absolute;
