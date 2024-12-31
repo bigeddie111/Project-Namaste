@@ -178,13 +178,13 @@ body{
 
     .fireworksH3 {
         font-size: 1.5em;
-        top: -20em;
+        top: -19em;
     }
 }
 
 @media screen and (max-width: 425px) {
     .fireworksH3 {
-        top: -20em;
+        top: -19em;
     }
     
     
@@ -192,12 +192,12 @@ body{
 
 @media screen and (max-width: 380px) {
     .fireworks h1 {
-        font-size: 1.45em;
+        font-size: 1.35em;
     }
 
     .fireworksH3 {
         font-size: 1.25em;
-        top: -19em;
+        top: -18em;
     }
     
 }
