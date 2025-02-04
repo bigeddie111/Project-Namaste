@@ -90,6 +90,6 @@ window.addEventListener('scroll', () => {
 const aboutView = document.querySelector("#about-view-our-menu");
 
 aboutView.addEventListener("click", () => {
-    window.open("https://order.tbdine.com/pickup/50672", "_blank");
+    window.open("https://drive.google.com/file/d/1CtFJmgZ9whHswsqcOuVgLA8aLihJAzRa/view", "_blank");
 })
 
