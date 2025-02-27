@@ -493,11 +493,25 @@ form button{
 }
 
 
-#about-main-last p{
+.about-main-last p{
     text-align: center;
     margin: 90px 30px;
     font-family: "Futura LT";
-    font-size: 1.5vw;
+    font-size: 1.15vw;
+    border: solid 1px black;
+    
+}
+
+.about-main-last {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10em;
+    padding: 2em;
+}
+
+.about-main-last img {
+    width: 40vw;
+    height: 50vw;
 }
 
 /* Menu  */
@@ -1009,10 +1023,6 @@ footer{
         order: 2;
     }
 
-    #about-view-our-menu {
-        height: 20em;
-    }
-
     #about-main-last p{
         font-size: 3vw;
     }
@@ -1038,3 +1048,4 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+

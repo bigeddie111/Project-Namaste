@@ -87,9 +87,9 @@ window.addEventListener('scroll', () => {
     
 })
 
-const aboutView = document.querySelector("#about-view-our-menu");
 
-aboutView.addEventListener("click", () => {
+const menuNav = document.querySelector(".navbar-nav li:nth-child(3)");
+
+menuNav.addEventListener("click", () => {
     window.open("https://drive.google.com/file/d/1CtFJmgZ9whHswsqcOuVgLA8aLihJAzRa/view", "_blank");
 })
-
